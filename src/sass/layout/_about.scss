@@ -5,6 +5,9 @@
     line-height: 1.3;
     letter-spacing: 0.03em;
     color: var(--main-color);
+
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 .about__description{
     font-weight: 800;
@@ -12,6 +15,16 @@
     line-height: 1.3;
     letter-spacing: 0.03em;
     color: var(--main-color); 
+
+    margin-bottom: 8px;
+}
+.about__line{
+    width: 280px;
+   border-bottom: 1px solid var(--second-extra-color);
+}
+
+.about__list{
+    margin-top: 20px;
 }
 .about__item{
     font-weight: 600;
@@ -32,5 +45,7 @@
     line-height: 1.67;
     text-decoration-line: underline;
     color: var(--accent-color);
+
+    margin-top: 8px;
 }
 
