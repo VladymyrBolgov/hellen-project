@@ -4,33 +4,33 @@
     font-size: 20px;
     line-height: 1.3;
     letter-spacing: 0.03em;
-    color: #111518;
+    color: var(--main-color);
 }
 .about__description{
     font-weight: 800;
     font-size: 20px;
     line-height: 1.3;
     letter-spacing: 0.03em;
-    color: #111518; 
+    color: var(--main-color); 
 }
 .about__item{
     font-weight: 600;
     font-size: 14px;
     line-height: 1.21;
     letter-spacing: 0.06em;
-    color: #111518;  
+    color: var(--main-color);  
 }
 .about__text{
     font-weight: 500;
     font-size: 12px;
     line-height: 1.67;
-    color: #B9B9B9;
+    color: var(--second-extra-color); 
 }
 .about__link{
     font-weight: 500;
     font-size: 12px;
     line-height: 1.67;
     text-decoration-line: underline;
-    color: #FF6B09;
+    color: var(--accent-color);
 }
 
