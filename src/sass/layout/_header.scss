@@ -1,0 +1,26 @@
+.header {
+    background-color: red;
+}
+
+.logo {
+    display: block;
+    width: 80px;
+    height: 29px;
+    background-color: rebeccapurple;
+}
+
+.header__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__menu {
+    display: none;
+}
+
+.burger {
+    display: block;
+    width: 20px;
+    height: 12px;
+}
