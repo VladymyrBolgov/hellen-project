@@ -1,36 +1,53 @@
 
 .about__title{
-    font-weight: 800;
-    font-size: 20px;
-    line-height: 1.3;
-    letter-spacing: 0.03em;
-    color: #111518;
+    @include font-size (800, 20px, 26px, 0.03em);
+    color: var(--main-color);
+    margin-bottom: 20px;
 }
 .about__description{
-    font-weight: 800;
-    font-size: 20px;
-    line-height: 1.3;
-    letter-spacing: 0.03em;
-    color: #111518; 
+    @include font-size (800, 20px, 26px, 0.03em);
+    color: var(--main-color);
+    
+    padding-bottom: 8px;
+    border-bottom: 1px solid var(--second-extra-color);
+    margin-bottom: 20px;
 }
+
 .about__item{
-    font-weight: 600;
-    font-size: 14px;
-    line-height: 1.21;
-    letter-spacing: 0.06em;
-    color: #111518;  
+    @include font-size (600, 14px, 17px, 0.06em);
+    color: var(--main-color);
+
+    &:not(:last-child){
+        margin-bottom: 20px;
+    }
+    
 }
+.about__list::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    display: block;
+    font-weight: 700;
+    border: 20px;
+    background-color: #FF6B09;
+}
+.about__list{
+    margin-bottom: 20px
+}
+
 .about__text{
-    font-weight: 500;
-    font-size: 12px;
-    line-height: 1.67;
-    color: #B9B9B9;
+    @include font-size (500, 12px, 20px, 0.08em);
+    color: var(--second-extra-color); 
+}
+.about__text-container{
+    margin-bottom: 8px;
 }
 .about__link{
-    font-weight: 500;
-    font-size: 12px;
-    line-height: 1.67;
+    @include font-size (500, 12px, 20px, 0.08em);
     text-decoration-line: underline;
-    color: #FF6B09;
+    color: var(--accent-color);
+
+
 }
 
