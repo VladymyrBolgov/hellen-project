@@ -15,14 +15,22 @@
 
 .about__item{
     @include font-size (600, 14px, 17px, 0.06em);
-    color: var(--main-color);  
+    color: var(--main-color);
+
+    &:not(:last-child){
+        margin-bottom: 20px;
+    }
+    
 }
-.about__item:not(:last-child){
-    margin-bottom: 20px;
+.about__list{
+    margin-bottom: 
 }
 .about__text{
     @include font-size (500, 12px, 20px, 0.08em);
     color: var(--second-extra-color); 
+}
+.about__text-container{
+    margin-bottom: 8px;
 }
 .about__link{
     @include font-size (500, 12px, 20px, 0.08em);
