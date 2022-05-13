@@ -22,9 +22,20 @@
     }
     
 }
+.about__list::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    display: block;
+    font-weight: 700;
+    border: 20px;
+    background-color: #FF6B09;
+}
 .about__list{
     margin-bottom: 20px
 }
+
 .about__text{
     @include font-size (500, 12px, 20px, 0.08em);
     color: var(--second-extra-color); 
