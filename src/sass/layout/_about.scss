@@ -24,9 +24,6 @@
 }
 .about__list::after{
     content: '';
-    position: absolute;
-    left: 0;
-    bottom: 0;
     display: block;
     font-weight: 700;
     border: 20px;
