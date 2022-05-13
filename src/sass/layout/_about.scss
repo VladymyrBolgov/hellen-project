@@ -25,10 +25,12 @@
 .about__list::after{
     content: '';
     display: block;
-    font-weight: 700;
+    width: 20px;
     border: 20px;
+    height: 2px;
     background-color: #FF6B09;
 }
+
 .about__list{
     margin-bottom: 20px
 }
