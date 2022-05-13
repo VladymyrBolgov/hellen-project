@@ -27,8 +27,9 @@
     display: block;
     width: 20px;
     border: 20px;
-    height: 2px;
-    background-color: #FF6B09;
+    height: 1px;
+    background-color: var(--accent-color);
+    
 }
 
 .about__list{
