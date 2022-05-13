@@ -1,19 +1,20 @@
 
 .about__title{
-    font-weight: 800;
+    @include font-size (800, 20px, 26px, 0.03em);
+   /* font-weight: 800;
     font-size: 20px;
     line-height: 1.3;
-    letter-spacing: 0.03em;
+    letter-spacing: 0.03em;*/
     color: var(--main-color);
 
-    margin-top: 20px;
     margin-bottom: 20px;
 }
 .about__description{
-    font-weight: 800;
+    @include font-size (800, 20px, 26px, 0.03em);
+    /*font-weight: 800;
     font-size: 20px;
     line-height: 1.3;
-    letter-spacing: 0.03em;
+    letter-spacing: 0.03em;*/
     color: var(--main-color);
     
     margin-bottom: 8px;
@@ -21,28 +22,29 @@
     width: 280px;
 }
 
-
-
 .about__list{
     margin-top: 20px;
 }
 .about__item{
-    font-weight: 600;
+    @include font-size (600, 14px, 17px, 0.06em);
+   /* font-weight: 600;
     font-size: 14px;
     line-height: 1.21;
-    letter-spacing: 0.06em;
+    letter-spacing: 0.06em;*/
     color: var(--main-color);  
 }
 .about__text{
-    font-weight: 500;
+    @include font-size (500, 12px, 20px);
+    /*font-weight: 500;
     font-size: 12px;
-    line-height: 1.67;
+    line-height: 1.67;*/
     color: var(--second-extra-color); 
 }
 .about__link{
-    font-weight: 500;
+    @include font-size (500, 12px, 20px);
+    /*font-weight: 500;
     font-size: 12px;
-    line-height: 1.67;
+    line-height: 1.67;*/
     text-decoration-line: underline;
     color: var(--accent-color);
 
