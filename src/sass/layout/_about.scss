@@ -1,53 +1,35 @@
 
 .about__title{
     @include font-size (800, 20px, 26px, 0.03em);
-   /* font-weight: 800;
-    font-size: 20px;
-    line-height: 1.3;
-    letter-spacing: 0.03em;*/
     color: var(--main-color);
-
     margin-bottom: 20px;
 }
 .about__description{
     @include font-size (800, 20px, 26px, 0.03em);
-    /*font-weight: 800;
-    font-size: 20px;
-    line-height: 1.3;
-    letter-spacing: 0.03em;*/
     color: var(--main-color);
     
     margin-bottom: 8px;
     border-bottom: 1px solid var(--second-extra-color);
-    width: 280px;
 }
-
 .about__list{
     margin-top: 20px;
 }
 .about__item{
     @include font-size (600, 14px, 17px, 0.06em);
-   /* font-weight: 600;
-    font-size: 14px;
-    line-height: 1.21;
-    letter-spacing: 0.06em;*/
     color: var(--main-color);  
 }
+.about__item:not(:last-child){
+    margin-bottom: 20px;
+}
 .about__text{
-    @include font-size (500, 12px, 20px);
-    /*font-weight: 500;
-    font-size: 12px;
-    line-height: 1.67;*/
+    @include font-size (500, 12px, 20px, 0.08em);
     color: var(--second-extra-color); 
 }
 .about__link{
-    @include font-size (500, 12px, 20px);
-    /*font-weight: 500;
-    font-size: 12px;
-    line-height: 1.67;*/
+    @include font-size (500, 12px, 20px, 0.08em);
     text-decoration-line: underline;
     color: var(--accent-color);
 
-    margin-top: 8px;
+
 }
 
