@@ -8,12 +8,11 @@
     @include font-size (800, 20px, 26px, 0.03em);
     color: var(--main-color);
     
-    margin-bottom: 8px;
+    padding-bottom: 8px;
     border-bottom: 1px solid var(--second-extra-color);
+    margin-bottom: 20px;
 }
-.about__list{
-    margin-top: 20px;
-}
+
 .about__item{
     @include font-size (600, 14px, 17px, 0.06em);
     color: var(--main-color);  
