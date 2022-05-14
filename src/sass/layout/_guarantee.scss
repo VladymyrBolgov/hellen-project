@@ -1,27 +1,88 @@
 .guarantee__title{
+    margin-bottom: 40px;
     color: var(--main-color);
     
     @include font-style (800, 26px, 34px, 0.03em);
     text-align: center; 
-    margin-bottom: 40px; 
+    
+}
+
+.guarantee__list {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    padding-left: 40px;
+    background-color: #F1F1F1;
 }
 
 .guarantee__item{
-    color: #3D3D3D;
+    position: relative;
+    color: var(--extra-color);
     
     @include font-style (500, 12px, 20px, 0.03em);
+
+   
 
     &:not(:last-child){
         margin-bottom: 24px;
     }
+
+    &::before {
+        position: absolute;
+        content: '';
+        display: block;
+        width: 14px;
+        height: 20px;
+        // background-image: url("/src/images/about/symbol-defs\ \(3\).svg#icon-fire");
+        background-size: contain;
+    
+        
+        left: -25px;
+        top: 0;
+        }
+
+    &:not(:last-child)::after {
+        position: absolute;
+        content: "";
+        border-left: 1px dashed var(--second-extra-color);
+        width: 1px;
+        bottom: -21px;
+        top: 23px;
+        left: -19px;
 }
 
-.guarantee__accent{
+}
+
+.guarantee__accent {
     color: var(--accent-color);
 }
 
-.guarantee__list{
-    padding-top: 40px;
-    padding-bottom: 40px;
-    background-color: #F1F1F1;
+@media screen and (min-width: 767.98px) {
+    .guarantee__list {
+        padding-left: 126px;
+        padding-top: 32px;
+        padding-bottom: 32px;
+    }
+
+}
+
+@media screen and (min-width: 1679.98px) {
+    .guarantee__list {
+        padding-left: 332px;
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+
+    .guarantee__title {
+        @include font-style (800, 46px, 60px, 0.03em);
+    }
+
+    .guarantee__item {
+        @include font-style (500, 20px, 28px, 0.03em);
+    
+        &::before {
+            width: 22px;
+            height: 30px;
+
+    }
+}
 }
