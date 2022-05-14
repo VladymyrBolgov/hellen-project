@@ -1,23 +1,31 @@
-<div class="mobile-menu">
-  <img src="" alt="logo company" />
-  <button type="button" class="mobile-menu__btn">
-    <svg class="mobile-menu__icon" width="20" height="20">
-      <use href=""></use>
-    </svg>
-  </button>
-  <ul class="mobile-menu__list">
-    <li class="mobile-menu__item">
-      <a href="" class="mobile-menu__link">Studying program</a>
-    </li>
-    <li class="mobile-menu__item">
-      <a href="" class="mobile-menu__link">About</a>
-    </li>
-    <li class="mobile-menu__item">
-      <a href="" class="mobile-menu__link">Training options</a>
-    </li>
-    <li class="mobile-menu__item">
-      <a href="" class="mobile-menu__link">Contacts</a>
-    </li>
-  </ul>
-  <button type="button" class="button">Consultation by phone</button>
+<div class="mobile-menu is-open" data-menu>
+  <div class="mobile-menu__container">
+    <a class="mobile-menu__logo" href="#">
+      <svg class="logo__icon">
+        <use href="/images/sprite.svg#icon-logo-white"></use>
+      </svg>
+    </a>
+    <button type="button" class="mobile-menu__btn" data-menu-close>
+      <svg class="mobile-menu__icon">
+        <use href="/images/sprite.svg#icon-closebtnmenu"></use>
+      </svg>
+    </button>
+    <div class="mobile-menu__wrapp">
+      <ul class="mobile-menu__list">
+        <li class="mobile-menu__item">
+          <a href="#program" class="mobile-menu__link">Studying program</a>
+        </li>
+        <li class="mobile-menu__item">
+          <a href="#about" class="mobile-menu__link">About</a>
+        </li>
+        <li class="mobile-menu__item">
+          <a href="#training" class="mobile-menu__link">Training options</a>
+        </li>
+        <li class="mobile-menu__item">
+          <a href="#contacts" class="mobile-menu__link">Contacts</a>
+        </li>
+      </ul>
+      <button type="button" class="button">Consultation by phone</button>
+    </div>
+  </div>
 </div>
