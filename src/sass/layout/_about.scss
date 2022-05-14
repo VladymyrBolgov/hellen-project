@@ -24,14 +24,14 @@
 }
 .about__list::after{
     content: '';
-    position: absolute;
-    left: 0;
-    bottom: 0;
     display: block;
-    font-weight: 700;
+    width: 20px;
     border: 20px;
-    background-color: #FF6B09;
+    height: 1px;
+    background-color: var(--accent-color);
+    
 }
+
 .about__list{
     margin-bottom: 20px
 }
@@ -47,7 +47,5 @@
     @include font-style (500, 12px, 20px, 0.08em);
     text-decoration-line: underline;
     color: var(--accent-color);
-
-
 }
 
