@@ -1,8 +1,8 @@
-  .advantages__img {
+  .advantages__item {
     display: flex;
     align-items: center;
   }
-    .advantages__list {
+    .advantages-container {
       margin-top: 40px;
       margin-bottom: 80px;
     }
@@ -43,7 +43,10 @@
 @media screen and (min-width:768px){
 .advantages__list {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
+  }
+  .advantages__item:not(:last-child) {
+  margin-right: 21px;
   }
 .advantages__description {
   width: 146px;
@@ -57,11 +60,9 @@
   font-weight: 700;
   font-size: 20px;
   line-height: 1.65;
-  line-height: 165%;
   letter-spacing: 8%;
   }
 .advantages__description {
   width: 366px;
-  height: 66px;
-}
+  }
 }
