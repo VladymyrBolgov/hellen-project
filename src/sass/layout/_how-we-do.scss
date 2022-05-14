@@ -8,14 +8,13 @@
 }
 
 .education__title {
-    font-family: 'Montserrat';
     @include font-style (800, 20px, 26px, 0.03em);
     color: var(--main-color);
     text-align: center;
 }
 
 .education__item {
-    width: 280px;
+    width: 298px;
     height: 280px;
     padding-top: 32px;
     padding-bottom: 8px;
@@ -31,8 +30,7 @@
 }
 
 .education__text {
-    font-family: 'Montserrat';
-    /*@include font-size (700, 14px, 20px, 0.08em);*/
+    @include font-style (700, 14px, 20px, 0.08em);
     color: var(--main-color);
     text-align: center;
     position: relative;
@@ -47,8 +45,6 @@
     border-radius: 2px;
     left: 50%;
     background: black;
-    align-items: center;
-    justify-content: center;
     transform: translateX(-50%);
 }
 .education__item:hover .education__text::after {
@@ -57,7 +53,6 @@
 }
 
 .education__discription {
-    font-family: 'Montserrat';
     @include font-style (500, 12px, 20px, 0.08em);
     color: var(--second-extra-color);
     text-align: center;
