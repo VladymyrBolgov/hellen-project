@@ -1,0 +1,141 @@
+.problems {
+    background-image: linear-gradient(
+    to bottom,
+    #111518 70%,
+    var(--optional-color) 30%)
+}
+
+.problems-container__title {
+    @media screen and (min-width: 768px) and (max-width: 1679.98px) {
+        max-width: 704px;
+    }
+}
+
+.problems__tittle {
+    display: block;
+    @media screen and (max-width: 767.98px) {
+        margin-left: auto;
+        margin-right: auto;
+
+        max-width: 280px;
+        padding-top: 24px;
+        padding-bottom: 24px;
+        padding-left: 0;
+    }
+
+    @media screen and (min-width: 768px) and (max-width: 1679.98px) {
+        max-width: 704px;
+        padding-top: 40px;
+        padding-bottom: 25px;
+        padding-left: 0;
+    }
+
+    @media screen and (min-width: 1680px) {
+        padding-top: 80px;
+        padding-bottom: 80px;
+        padding-left: 0;
+    }
+}
+
+.problems__tittle-text {
+    font-weight: 800;
+    font-size: 24px;
+    line-height: 130%;
+    letter-spacing: 0.03em;
+    color: var(--optional-color);
+
+    @media screen and (min-width: 1680px) {
+        font-size: 46px;
+        line-height: 130%;
+    }
+}
+
+.problems__tittle-text--color {
+    color: var(--accent-color);
+}
+
+.problems-container__list {
+    background-color: #fff;
+    box-shadow: -5px 8px 26px rgba(0, 0, 0, 0.04);
+
+    @media screen and (max-width: 767.98px) {
+        max-width: 280px;
+        padding: 20px 24px 20px 20px;
+    }
+
+    @media screen and (min-width: 768px) and (max-width: 1679.98px) {
+        max-width: 704px;
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+
+    @media screen and (min-width: 1680px) {
+        max-width: 1648px;
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+}
+
+.problems__list {
+    display: flex;
+    flex-wrap: wrap;
+
+    counter-reset: number 0;
+
+    @media screen and (min-width: 768px) and (max-width: 1679.98px) {
+        justify-content: center;
+    }
+
+    @media screen and (min-width: 1680px) {
+        padding-left: 170px;
+    }
+
+}
+
+.problems-list__item {
+    counter-increment: number;
+    
+    display: block;
+
+
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.08em;
+    color: #111518;
+
+    @media screen and (max-width: 767.98px) {
+        margin-bottom: 16px;
+    }
+
+    @media screen and (min-width: 768px) and (max-width: 1679.98px) {
+        margin-bottom: 44px;
+        padding-right: 32px;
+        width: 236px;
+    }
+
+    @media screen and (min-width: 1680px) {
+        margin-bottom: 72px;
+        margin-right: 100px;
+        width: 336px;
+
+        
+        font-size: 20px;
+        line-height: 28px;
+    }
+
+    &::before {
+        content: counter(number);
+        display: block;
+        border: var(--accent-color);
+        color: var(--accent-color);
+        
+        @media screen and (max-width: 1679.98px) {
+            margin-bottom: 5px;
+        }
+
+        @media screen and (min-width: 1680px) {
+            margin-bottom: 8px;
+        }
+    }
+}
