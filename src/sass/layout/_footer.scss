@@ -67,10 +67,13 @@
         .footer__connection-link {
             margin-right: 24px;
             margin-bottom: 0px;
+            @include font-style (600, 20px, 24px, 0.08em)
 
             &::after {
                 content: ' ';
-                
+                margin-left: 24px;
+                height: 40px;
+                border: 1px solid #B9B9B9;
             }
         }
 }
