@@ -1,0 +1,94 @@
+.contact {
+    background-color: rgba(17, 21, 24, 1);
+    background-image: linear-gradient(rgba(17, 21, 24, 1),
+            rgba(17, 21, 24, 1)), url("/images/bgform-mobile.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    align-items: center;
+    text-align: center;
+}
+
+@media (min-device-pixel-ratio: 2),
+(min-resolution: 192dpi),
+(min-resolution: 2dppx) {
+    .hero {
+        background-image: url("/images/bgform-mobile@2x.jpg");
+    }
+}
+
+.contact__content {
+    align-items: center;
+    text-align: center;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.contact__title {
+    @include font-style (800, 14px, 18.2px, 0.03em);
+    color: var(--optional-color);
+}
+
+.contact--accent {
+    color: var(--accent-color);
+}
+
+.contact__description {
+    @include font-style (600, 12px, 14.63px, 0.08em);
+    color: var(--optional-color);
+    margin-top: 24px;
+}
+
+.contact__form {
+    margin-top: 40px;
+}
+
+.contact__input {
+    display: block;
+    width: 100%;
+    height: 48px;
+    border: 1px solid rgba(255, 255, 255, 1);
+    outline: none;
+    background: none;
+    color: var(--optional-color);
+    padding: 15px 28px;
+    align-items: center;
+
+    &:focus {
+        outline: none;
+        border-color: var(--accent-color);
+    }
+
+    &::placeholder {
+        @include font-style (600, 14px, 17.07px, 0.08em);
+        color: var(--optional-color)
+    }
+
+    &:not(:placeholder-shown):required:invalid {
+        border-color: red;
+    }
+
+    &:first-child {
+        margin-bottom: 20px;
+    }
+}
+
+.contact__btn {
+    min-width: 100%;
+    padding: 14px 0px;
+    border: none;
+    @include font-style (700, 12px, 14.63px, 0.08em);
+    font-family: inherit;
+    margin-top: 40px;
+    color: var(--optional-color);
+    cursor: pointer;
+    text-transform: uppercase;
+    background-color: var(--accent-color);
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+        background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+        color: var(--main-color);
+        background-color: #e86108;
+    }
+}
