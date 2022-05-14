@@ -52,4 +52,33 @@
     color: var(--accent-color);
 }
 
+@media screen and (min-width: 768px){
+    .container{
+        display: flex;
+        }   
+    .about__title{
+        padding-top: 40px; 
+        padding-bottom: 40px;
+    }
+    .about__wrapper{
+        padding-top: 112px; 
+        width: 402px; 
+        margin-left: 60px;
+    }
+}
+
+@media screen and (min-width: 1680px) {
+    .container{
+        display: flex;
+        }
+        .about__title{
+            padding-top: 80px; 
+            padding-bottom: 80px;
+        }
+        .about__wrapper{
+            padding-top: 217px; 
+            width: 668px; 
+            margin-left: 172px;
+        }
+}
 
