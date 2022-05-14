@@ -1,11 +1,11 @@
 
 .about__title{
-    @include font-size (800, 20px, 26px, 0.03em);
+    @include font-style (800, 20px, 26px, 0.03em);
     color: var(--main-color);
     margin-bottom: 20px;
 }
 .about__description{
-    @include font-size (800, 20px, 26px, 0.03em);
+    @include font-style (800, 20px, 26px, 0.03em);
     color: var(--main-color);
     
     padding-bottom: 8px;
@@ -14,7 +14,7 @@
 }
 
 .about__item{
-    @include font-size (600, 14px, 17px, 0.06em);
+    @include font-style (600, 14px, 17px, 0.06em);
     color: var(--main-color);
 
     &:not(:last-child){
@@ -28,7 +28,7 @@
     margin-bottom: 30px;
 }
 .about__list::after{
-    content: "" ;
+    content: '';
     position: absolute;
     bottom: 0;
     left: 0;
@@ -40,14 +40,14 @@
     background-color: var(--accent-color);
 }
 .about__text{
-    @include font-size (500, 12px, 20px, 0.08em);
+    @include font-style (500, 12px, 20px, 0.08em);
     color: var(--second-extra-color); 
 }
 .about__text-container{
     margin-bottom: 8px;
 }
 .about__link{
-    @include font-size (500, 12px, 20px, 0.08em);
+    @include font-style (500, 12px, 20px, 0.08em);
     text-decoration-line: underline;
     color: var(--accent-color);
 }
