@@ -8,12 +8,12 @@
     }
 // 0px-1679px
 @media screen and (max-width:1679px){
+  // @include font-size (500, 14px, 28px, 0.03em);
 .advantages__description{
   font-weight: 500;
   font-size: 14px;
   line-height: 1.64;
-  line-height: 165%;
-}
+ }
 .advantages__description {
   margin-left: 12px;
 }
@@ -65,4 +65,7 @@
 .advantages__description {
   width: 366px;
   }
+    .advantages__item:not(:last-child) {
+      margin-right: 112px;
+    }
 }
