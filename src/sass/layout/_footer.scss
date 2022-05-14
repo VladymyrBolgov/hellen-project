@@ -31,12 +31,11 @@
     margin-bottom: 20px;
         @include font-style (600, 14px, 17px, 0.08em);
         color: #111518;
-        transition: color 250ms cubic-bezier(0.215, 0.610, 0.355, 1), transform 250ms cubic-bezier(0.215, 0.610, 0.355, 1);
+        transition: color 250ms cubic-bezier(0.215, 0.610, 0.355, 1);
 
         &:hover,
         &:focus {
             color: var(--accent-color);
-            transform: scale(1.2);
         }
 }
 
@@ -79,8 +78,8 @@
             flex-direction: row;
             justify-content: space-between;
             align-items: center;
-            padding-right: 32px;
-            padding-left: 32px;
+        //     padding-right: 32px;
+        //     padding-left: 32px;
         }
     
         .footer__logo {
@@ -110,8 +109,8 @@
     .footer__thumb {
         justify-content: space-between;
         align-items: center;
-        padding-right: 16px;
-        padding-left: 16px;
+        // padding-right: 16px;
+        // padding-left: 16px;
     }
 
     .footer__wrapper {
@@ -122,11 +121,5 @@
     .footer__connection-link {
         @include font-style (600, 30px, 37px, 0.08em);
 
-        &::after {
-            content: ' ';
-            margin-left: 16px;
-            height: 40px;
-            border: 1px solid #B9B9B9;
-        }
     }
 }
