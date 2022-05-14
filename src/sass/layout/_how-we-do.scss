@@ -1,19 +1,15 @@
 .education {
-    padding-top: 40px;
     padding-bottom: 40px;
 }
 
-.education__item {
+.education__item:not(:last-child) {
     margin-bottom: 16px;
-    &:last-child{
-        margin-bottom: 0px;
-    }
 
 }
 
 .education__title {
     font-family: 'Montserrat';
-    @include font-size (800, 20px, 26px, 0.03em);
+    @include font-style (800, 20px, 26px, 0.03em);
     color: var(--main-color);
     text-align: center;
 }
@@ -36,42 +32,40 @@
 
 .education__text {
     font-family: 'Montserrat';
-    @include font-size (700, 14px, 20px, 0.08em);
+    /*@include font-size (700, 14px, 20px, 0.08em);*/
     color: var(--main-color);
     text-align: center;
-}
-
-.education__discription {
-    font-family: 'Montserrat';
-    @include font-size (500, 12px, 20px, 0.08em);
-    color: var(--second-extra-color);
-    text-align: center;
-    margin: 0px;
-}
-
-.effect {
     position: relative;
 }
 
-.effect::after {
+.education__text::after {
     content: '';
     width: 20px;
     height: 4px;
     position: absolute;
     bottom: 0;
     border-radius: 2px;
-    right: 50%;
-    background: var(--accent-color);
+    left: 50%;
+    background: black;
     align-items: center;
     justify-content: center;
+    transform: translateX(-50%);
+}
+.education__item:hover .education__text::after {
+    background: var(--optional-color);
 
 }
-.education__item:hover .effect::after {
-    background:var(--optional-color);
 
+.education__discription {
+    font-family: 'Montserrat';
+    @include font-style (500, 12px, 20px, 0.08em);
+    color: var(--second-extra-color);
+    text-align: center;
+    margin: 0px;
 }
+
+
 .education__text {
-    margin-top: 0px;
     padding-bottom: 18px;
     margin-bottom: 18px;
 }
@@ -82,7 +76,6 @@
     justify-content: center;
 
 }
-
 .education__icon {
     fill: var(--accent-color);
     margin-bottom: 20px;
