@@ -22,7 +22,7 @@ npm ci
 
 Запустить режим разработки.
 
-```shell
+````shell
 npm run dev
 ```
 
@@ -40,7 +40,7 @@ npm run dev
 "scripts": {
   "build": "parcel build src/*.html --public-url /имя_репозитория/"
 },
-```
+````
 
 На всякий случай стоит зайти в настройки репозитория `Settings` > `Pages` и убедиться что продакшен
 версии файлов раздаются из папки `/root` ветки `gh-pages`.
