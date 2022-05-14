@@ -1,0 +1,145 @@
+
+                // макс 768
+@media screen and (max-width: 767.98px) {
+// главный див меню
+    .mobile-menu {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        max-width: 768px;
+        height: 100vh;
+        overflow: scroll;
+
+        background-color: rgba(17, 21, 24, 0.9);
+
+        /* opacity: 0;
+        visibility: hidden;
+        pointer-events: none;
+        transition: opacity 250ms var(--timing-function), visibility 250ms var(--timing-function);
+        z-index: 1; */
+    }
+// открытие меню
+    .mobile-menu.is-open {
+        opacity: 1;
+        visibility: visible;
+        pointer-events: auto;
+    }
+// логотип
+    .mobile-menu__logo {
+        display: block;
+        margin-bottom: 80px;
+    }
+// контейнер меню
+    .mobile-menu__container {
+        position: relative;
+        height: 100vh;
+        padding: 20px;
+    }
+// кнопка закрытия меню
+    .mobile-menu__btn {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        background-color: transparent;
+
+        border: none;
+        line-height: 0;
+        padding: 0;
+        transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+        &:hover,
+        &:focus {
+            fill: var(--accent-color);
+        }
+
+    }
+// иконка крестик
+    .mobile-menu__icon{
+        @include size (16px, 16px);
+    }
+
+// список меню
+    .mobile-menu__list {
+        margin-bottom: 40px;
+
+    }
+// позиционирование меню
+    .mobile-menu__wrapp {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+// item
+    .mobile-menu__link {
+        color: var(--optional-color);
+
+        @include font-style (800, 26px, 47px, 0.03em);
+        transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+        &:hover,
+        &:focus {
+            color: var(--accent-color);
+        }
+    }
+// скрытие кнопки на десктопе
+    .mobile-menu__button {
+        display: none;
+    }
+
+}
+
+// макс 480px
+@media screen and (max-width: 479.98px) {
+
+    .mobile-menu {
+        width: 100%;
+        max-width: 480px;
+    }
+
+    .mobile-menu__logo {
+        margin-bottom: 40px;
+    }
+
+    .mobile-menu__wrapp {
+        align-items: flex-start;
+    }
+
+    .mobile-menu__link {
+        @include font-style (800, 20px, 36px, 0.03em);
+    }
+// большая кнопка
+    .mobile-menu__button {
+        display: block;
+        margin: 0 auto;
+        max-width: 280px;
+        max-height: 50px;
+        border: 2px solid var(--accent-color);
+        cursor: pointer;
+        padding: 14px 32px;
+       margin: 0 auto;
+
+        color: var(--accent-color);
+        background-color: transparent;
+        font-family: inherit;
+        @include font-style (700, 12px, 15px, 0.08em);
+        text-transform: uppercase;
+        transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        
+
+        &:hover,
+        &:focus {
+            color: var(--optional-color);
+            border-color: var(--optional-color);
+        }
+
+    }
+
+}
+
+@media screen and (min-width: 768px){
+    .mobile-menu{
+        display: none;
+    }
+ 
+}
