@@ -21,6 +21,15 @@
         margin-bottom: 20px;
     }
 }
+/* проверять тут*/
+.about__item{
+    display: flex;
+}
+.about__icon{
+    fill: var(--accent-color);
+    margin-right:  9px;
+}
+
 /*оранжевая линия*/
 .about__list{
     position: relative;
@@ -68,9 +77,6 @@
 }
 
 @media screen and (min-width: 1680px) {
-    .about__container{
-        display: flex;
-        }
         .about__title{
             padding-top: 80px; 
             padding-bottom: 80px;
@@ -79,6 +85,10 @@
             padding-top: 217px; 
             width: 668px; 
             margin-left: 172px;
+        }
+        /* проверять тут*/
+        .about__icon{
+            margin-right: 35px;
         }
 }
 
