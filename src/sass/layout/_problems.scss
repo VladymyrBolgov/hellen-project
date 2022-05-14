@@ -1,13 +1,25 @@
 .problems {
+    position: relative;
     background-image: linear-gradient(
     to bottom,
-    #111518 70%,
-    var(--optional-color) 30%)
+    var(--main-color) 70%,
+    var(--optional-color) 30%), 
+}
+
+
+
+.problems__icons {
+    position: absolute;
+    top: 88px;
+    left: 1281px;
+    fill: var(--extra-color);
+    z-index: 0;
 }
 
 .problems-container__title {
     @media screen and (min-width: 768px) and (max-width: 1679.98px) {
         width: 704px;
+        padding-left: 0;
     }
 }
 
@@ -55,8 +67,9 @@
 }
 
 .problems-container__list {
-    background-color: #fff;
+    background-color: var(--optional-color);
     box-shadow: -5px 8px 26px rgba(0, 0, 0, 0.04);
+    z-index: 100;
 
     @media screen and (max-width: 767.98px) {
         max-width: 280px;
@@ -102,7 +115,7 @@
     font-size: 14px;
     line-height: 24px;
     letter-spacing: 0.08em;
-    color: #111518;
+    color: var(--main-color);
 
     @media screen and (max-width: 767.98px) {
         margin-bottom: 16px;
@@ -118,7 +131,6 @@
         margin-bottom: 72px;
         margin-right: 100px;
         width: 336px;
-
         
         font-size: 20px;
         line-height: 28px;
