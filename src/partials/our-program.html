@@ -103,14 +103,16 @@
       </li>
       <li class="program__item">
         <h3 class="program__term">5 semester</h3>
-        <ul class="program__order ">
-          <b class="program__subject"></b>
+        <ul class="program__order program__order--pseudo">
+          <div>
+          <b class="program__subject program__subject--pseudo">a</b>
           <li class="program__topic">Revision</li>
           <li class="program__topic">Tests</li>
+          </div>
         </ul>
       </li>
     </ul>
-    <picture class="program__picture">
+    <picture >
       <source
         srcset="./images/lesson-desktop.webp 1x, ./images/lesson-desktop@2x.webp 2x"
         media="(min-width: 1680px)"
@@ -140,7 +142,7 @@
         srcset="./images/lesson-mobile.jpg 1x, ./images/lesson-mobile@2x.jpg 2x"
         media="(max-width: 767px)"
       />
-      <img src="./images/lesson-desktop.jpg" alt="English lesson" />
+      <img class="program__picture" src="./images/lesson-desktop.jpg" alt="English lesson" />
     </picture>
   </div>
 </section>
