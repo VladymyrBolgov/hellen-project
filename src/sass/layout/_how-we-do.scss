@@ -1,0 +1,77 @@
+.education {
+    padding-bottom: 40px;
+}
+
+.education__item:not(:last-child) {
+    margin-bottom: 16px;
+
+}
+
+.education__title {
+    @include font-style (800, 20px, 26px, 0.03em);
+    color: var(--main-color);
+    text-align: center;
+}
+
+.education__item {
+    width: 298px;
+    height: 280px;
+    padding-top: 32px;
+    padding-bottom: 8px;
+    padding-left: 4px;
+    padding-right: 4px;
+    box-shadow: 0px 8px 26px rgba(0, 0, 0, 0.1);
+
+    &:hover,
+    &:focus {
+    background-color: var(--accent-color);
+    color: var(--optional-color);
+        }
+}
+
+.education__text {
+    @include font-style (700, 14px, 20px, 0.08em);
+    color: var(--main-color);
+    text-align: center;
+    position: relative;
+}
+
+.education__text::after {
+    content: '';
+    width: 20px;
+    height: 4px;
+    position: absolute;
+    bottom: 0;
+    border-radius: 2px;
+    left: 50%;
+    background: black;
+    transform: translateX(-50%);
+}
+.education__item:hover .education__text::after {
+    background: var(--optional-color);
+
+}
+
+.education__discription {
+    @include font-style (500, 12px, 20px, 0.08em);
+    color: var(--second-extra-color);
+    text-align: center;
+    margin: 0px;
+}
+
+
+.education__text {
+    padding-bottom: 18px;
+    margin-bottom: 18px;
+}
+
+.education__icon-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.education__icon {
+    fill: var(--accent-color);
+    margin-bottom: 20px;
+}
