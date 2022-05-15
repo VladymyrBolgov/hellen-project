@@ -23,21 +23,11 @@
         color: var(--optional-color);
     }
 }
-/*.education__list{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}*/
+
 .education__item {
     margin-left: auto;
     margin-right: auto;
     box-sizing: border-box;
-    width: 298px;
-    height: 280px;
-    padding-top: 32px;
-    padding-bottom: 8px;
-    padding-left: 15px;
-    padding-right: 15px;
     box-shadow: 0px 8px 26px rgba(0, 0, 0, 0.1);
     text-align: center;
 
@@ -67,7 +57,6 @@
 
 }
 
-
 .education__icon-box {
     display: flex;
     align-items: center;
@@ -76,8 +65,8 @@
 }
 .education__icon {
     fill: var(--accent-color);
-    margin-bottom: 20px;
 }
+//480+
 @media screen and (max-width:767.98px){
     .education__title {
            @include font-style (800, 20px, 26px, 0.03em);
@@ -105,6 +94,9 @@
                     padding-bottom: 18px;
                     margin-bottom: 18px;
           }
+     .education__icon {
+        margin-bottom: 20px;
+}     
 }
 
 //768+
@@ -113,6 +105,13 @@
             @include font-style (800, 26px, 34px, 0.03em);
             margin-bottom: 40px;
         }
+         .education__text {
+             @include font-style (700, 14px, 20px, 0.08em);
+         }
+    .education__discription {
+             @include font-style (500, 12px, 20px, 0.08em);
+             
+         }
      .education__list {
              display: flex;
             flex-wrap: wrap;
@@ -137,5 +136,55 @@
             padding-bottom: 22px;
             margin-bottom: 22px;
         }
+         .education__icon {
+             margin-bottom: 32px;
+         }
 
 }
+
+//1680+
+@media screen and (min-width: 1680px){
+    .education__title {
+            @include font-style (800, 46px, 60px, 0.03em);
+            margin-bottom: 40px;
+            text-align: start;
+        }
+         .education__text {
+             @include font-style (700, 20px, 28px, 0.08em);
+         }
+    
+         .education__discription {
+             @include font-style (500, 18px, 28px, 0.08em);
+    
+         }
+                .education__list {
+                    display: flex;
+                    flex-wrap: wrap;
+                    margin-left: -32px;
+                    margin-top: -31px;
+                }
+        
+                .education__item {
+                    margin-left: 32px;
+                    margin-top: 31px;
+                    flex-basis: calc((100% - 96px) / 3);
+                }
+                .education__item {
+                    width: 528px;
+                    height: 492px;
+                    padding-top: 90px;
+                    padding-bottom: 80px;
+                    padding-left: 82px;
+                    padding-right: 82px;
+                }
+
+                .education__text {
+                    padding-bottom: 22px;
+                    margin-bottom: 22px;
+                }
+                 .education__text {
+                     padding-bottom: 18px;
+                     margin-bottom: 18px;
+                 }
+}
+
