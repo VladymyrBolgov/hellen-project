@@ -9,11 +9,11 @@
     padding-left: 20px;
     background-color: rgba(17, 21, 24, 0.9);
 
-    /* opacity: 0;
+        opacity: 0;
         visibility: hidden;
         pointer-events: none;
         transition: opacity 250ms var(--timing-function), visibility 250ms var(--timing-function);
-        z-index: 1; */
+        z-index: 100;
 }
                                
 .mobile-menu.is-open {
@@ -30,7 +30,7 @@
 }
 
 
-.mobile-menu__btn {
+.mobile-menu__close-btn {
     position: absolute;
     display: block;
     top: 20px;
@@ -50,7 +50,7 @@
 
 .mobile-menu__icon {
     @include size (16px, 16px);
-    fill: currentColor;
+    fill: red;
 }
 
 
