@@ -1,8 +1,8 @@
 <section class="about">
-    <div class="container">
-        <div class="about__box">
-            <h2 class="about__title">Teacher</h2>       
-            <picture class="about__img">
+
+    <div class="about__container container">
+        <h2 class="about__title">Teacher</h2>        
+        <picture class="about__box">
             <source
                 srcset="/images/about/desktop/teacher-desktop-1.webp 1x, /images/about/desktop/teacher-desktop-2@2x.webp 2x"
                 media="(min-width:1680px)" type="image/webp">
@@ -18,6 +18,11 @@
             <source
                 srcset="/images/about/mob-tab/teacher-mob-1.webp 1x, /images/about/mob-tab/teacher-mob-2@2x.webp 2x"
                 media="(max-width:767.98px)" type="image/webp">
+            <source 
+                srcset="/images/about/mob-tab/teacher-mob-1.jpg 1x, /images/about/mob-tab/teacher-mob-2@2x.jpg 2x"
+                media="(max-width:767.98px)"> 
+                <img src="/images/about/mob-tab/teacher-mob-1.jpg" alt="Фото Elena Moreva">
+        </picture>
         
             <source 
                 srcset="/images/about/mob-tab/teacher-mob-1.jpg 1x, /images/about/mob-tab/teacher-mob-2@2x.jpg 2x"
@@ -30,14 +35,23 @@
             <!--разделение серой чертой полностью-->
             <ul class="about__list">
                 <li class="about__item">
+                    <svg class="about__icon" width="17" height="14">
+                        <use href="/images/sprite.svg#icon-markteacher"></use>
+                    </svg>
                     6 yeards of experience in
                     preparing students for UPE   
                 </li>
                 <li class="about__item">
+                    <svg class="about__icon" width="17" height="14">
+                        <use href="/images/sprite.svg#icon-markteacher"></use>
+                    </svg>
                     Own result of passing VNO - 
                     197 points 2 years in a row
                 </li>
                 <li class="about__item">
+                    <svg class="about__icon" width="17" height="14">
+                        <use href="/images/sprite.svg#icon-markteacher"></use>
+                    </svg>
                     Passed excellent at the 
                     international analogue of UPE - 
                     Cambridge PET (Preliminary English Test)  
@@ -70,5 +84,4 @@
                 </a>
         </div>   
     </div>
-  </div>
 </section>
