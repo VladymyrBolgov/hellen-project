@@ -1,23 +1,22 @@
 .contact {
     background-color: rgba(17, 21, 24, 1);
-    background-image: linear-gradient(rgba(17, 21, 24, 1),
-            rgba(17, 21, 24, 1)), url("/images/bgform-mobile.jpg");
+    background-image: linear-gradient(rgba(17, 21, 24, 0.8),
+            rgba(17, 21, 24, 1)), url("/images/contact/bgform-mobile.jpg");
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
     align-items: center;
-    text-align: center;
-}
+    }
 
 @media (min-device-pixel-ratio: 2),
 (min-resolution: 192dpi),
 (min-resolution: 2dppx) {
-    .hero {
-        background-image: url("/images/bgform-mobile@2x.jpg");
+    .contact {
+        background-image: url("/images/contact/bgform-mobile@2x.jpg");
     }
 }
 
 .contact__content {
-    align-items: center;
     text-align: center;
     padding-top: 40px;
     padding-bottom: 40px;
@@ -49,6 +48,7 @@
     border: 1px solid rgba(255, 255, 255, 1);
     outline: none;
     background: none;
+    background-color: transparent;
     color: var(--optional-color);
     padding: 15px 28px;
     align-items: center;
@@ -60,20 +60,20 @@
 
     &::placeholder {
         @include font-style (600, 14px, 17.07px, 0.08em);
-        color: var(--optional-color)
+        color: var(--optional-color);
     }
 
     &:not(:placeholder-shown):required:invalid {
         border-color: red;
     }
 
-    &:first-child {
-        margin-bottom: 20px;
+    &:nth-child(2) {
+        margin-top: 20px;
     }
 }
 
 .contact__btn {
-    min-width: 100%;
+    width: 100%;
     padding: 14px 0px;
     border: none;
     @include font-style (700, 12px, 14.63px, 0.08em);
