@@ -11,31 +11,6 @@
     }
 }
 
-.problem-container {
-    display: block;
-
-    @media screen and (max-width: 767.98px) {
-        max-width: 280px;
-        padding-top: 24px;
-        padding-bottom: 24px;
-        padding-left: 0;
-    }
-
-    @media screen and (min-width: 768px) and (max-width: 1679.98px) {
-        max-width: 704px;
-        padding-left: 0;
-        padding-top: 40px;
-        padding-bottom: 25px;
-    }
-
-    @media screen and (min-width: 1680px) {
-        max-width: 1648px;
-        padding-top: 80px;
-        padding-bottom: 80px;
-        padding-left: 0;
-    }
-}
-
 .problem__text {
     font-weight: 800;
     font-size: 24px;
@@ -43,7 +18,28 @@
     letter-spacing: 0.03em;
     color: var(--optional-color);
 
+    @media screen and (max-width: 767.98px) {
+        max-width: 280px;
+        padding-top: 24px;
+        padding-bottom: 24px;
+        padding-left: 0;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    @media screen and (min-width: 768px) and (max-width: 1679.98px) {
+        max-width: 704px;
+        padding-top: 40px;
+        padding-bottom: 25px;
+        padding-left: 0;
+    }
+
     @media screen and (min-width: 1680px) {
+        max-width: 1648px;
+        padding-top: 80px;
+        padding-bottom: 80px;
+        padding-left: 0;
+
         font-size: 46px;
         line-height: 130%;
     }
@@ -83,7 +79,7 @@
     }
 }
 
-.problems-list__item {
+.problems__item {
     position: relative;
     display: block;
     counter-increment: number 1;
@@ -127,7 +123,7 @@
     }
 }
 
-.problems-hyphen {
+.problems__hyphen {
     content: '';
     display: block;
     position: absolute;
@@ -138,6 +134,6 @@
     background: var(--accent-color);
 }
 
-.problems-text {
+.problems__text {
     color: var(--main-color);
 }
