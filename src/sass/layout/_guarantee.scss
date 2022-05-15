@@ -8,9 +8,7 @@
 }
 
 .guarantee__list {
-    padding-top: 40px;
-    padding-bottom: 40px;
-    padding-left: 40px;
+    padding: 40px 5px 40px 40px;
     background-color: #F1F1F1;
 }
 
@@ -32,10 +30,9 @@
         display: block;
         width: 14px;
         height: 20px;
-        // background-image: url("/src/images/about/symbol-defs\ \(3\).svg#icon-fire");
+        background-image: url("/images/sprite.svg#icon-fire");
         background-size: contain;
     
-        
         left: -25px;
         top: 0;
         }
@@ -58,18 +55,14 @@
 
 @media screen and (min-width: 767.98px) {
     .guarantee__list {
-        padding-left: 126px;
-        padding-top: 32px;
-        padding-bottom: 32px;
+        padding: 32px 58px 32px 126px;
     }
 
 }
 
 @media screen and (min-width: 1679.98px) {
     .guarantee__list {
-        padding-left: 332px;
-        padding-top: 60px;
-        padding-bottom: 60px;
+        padding: 60px 278px 60px 332px;
     }
 
     .guarantee__title {
