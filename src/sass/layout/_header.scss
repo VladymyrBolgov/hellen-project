@@ -1,6 +1,12 @@
+
 .header {
+    z-index: 5;
+    position: fixed;
+    left: 50%;
+    transform: translate(-50%, 0);
+    width: 100%;
+    background-color: var(--optional-color);
     padding: 20px 0;
-    font-family: 'Montserrat';
     font-style: normal;
     font-weight: 700;
     font-size: 14px;
@@ -9,12 +15,10 @@
             display: block;
     
             &-icon {
-                width: 80px;
-                height: 29px;
+                @include size (80px, 29px);
     
                 @media screen and (min-width: 768px) {
-                    width: 128px;
-                    height: 45px;
+                    @include size (128px, 45px);
                 }
             }
         }
@@ -45,14 +49,9 @@
         }
     }
     &__btn {
-       
-        width: 280px;
-        height: 48px;
-        font-weight: 700;
-        font-size: 12px;
-        line-height: 1.25;
+        @include size (280px, 48px);
+        @include font-style (700, 12px, 15px, 0.08em);
         text-align: center;
-        letter-spacing: 0.08em;
         text-transform: uppercase;
         color: var(--accent-color);
         background-color: var(--optional-color);
@@ -90,19 +89,27 @@
 }
 
 .burger {
-            display: flex;
-                justify-content: center;
-                align-items: center;
-    width: 84px;
-    height: 48px;
-    // display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    background-color: transparent;
     &__icon{
-        width: 42px;
-        height: 34px;
-        fill: black;
+        @include size (21px, 14px);
     }
 
     @media screen and (min-width: 1680px) {
         display: none;
     }
 }
+
+// .mobile-menu{
+//     position: fixed;
+//     opacity: 0;
+//     visibility: hidden;
+//     pointer-events: none;
+//     &.is-open {
+//         opacity: 1;
+//         visibility: visible;
+//         pointer-events: auto;
+// }}
