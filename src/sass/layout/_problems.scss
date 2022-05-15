@@ -1,34 +1,20 @@
 .problems {
     position: relative;
-    background-image: linear-gradient(
-    to bottom,
+    background-image: linear-gradient(to bottom,
     var(--main-color) 70%,
-    var(--optional-color) 30%), 
-}
+    var(--optional-color) 30%);
 
+    padding-bottom: 40px;
 
-
-.problems__icons {
-    position: absolute;
-    top: 88px;
-    left: 1281px;
-    fill: var(--extra-color);
-    z-index: 0;
-}
-
-.problems-container__title {
-    @media screen and (min-width: 768px) and (max-width: 1679.98px) {
-        width: 704px;
-        padding-left: 0;
+    @media screen and (min-width: 1680px) {
+        padding-bottom: 80px;
     }
 }
 
-.problems__tittle {
+.problem-container {
     display: block;
-    @media screen and (max-width: 767.98px) {
-        margin-left: auto;
-        margin-right: auto;
 
+    @media screen and (max-width: 767.98px) {
         max-width: 280px;
         padding-top: 24px;
         padding-bottom: 24px;
@@ -37,19 +23,20 @@
 
     @media screen and (min-width: 768px) and (max-width: 1679.98px) {
         max-width: 704px;
+        padding-left: 0;
         padding-top: 40px;
         padding-bottom: 25px;
-        padding-left: 0;
     }
 
     @media screen and (min-width: 1680px) {
+        max-width: 1648px;
         padding-top: 80px;
         padding-bottom: 80px;
         padding-left: 0;
     }
 }
 
-.problems__tittle-text {
+.problem__text {
     font-weight: 800;
     font-size: 24px;
     line-height: 130%;
@@ -62,69 +49,72 @@
     }
 }
 
-.problems__tittle-text--color {
+.problem__text--color {
     color: var(--accent-color);
 }
 
-.problems-container__list {
+.problems__list {
+    display: flex;
+    flex-wrap: wrap;
+    counter-reset: number 0;
+
     background-color: var(--optional-color);
     box-shadow: -5px 8px 26px rgba(0, 0, 0, 0.04);
-    z-index: 100;
 
     @media screen and (max-width: 767.98px) {
-        max-width: 280px;
         padding: 20px 24px 20px 20px;
+        max-width: 280px;
+        margin-left: auto;
+        margin-right: auto;
     }
 
     @media screen and (min-width: 768px) and (max-width: 1679.98px) {
+        justify-content: center;
         max-width: 704px;
-        padding-top: 40px;
-        padding-bottom: 40px;
+        padding-top: 32px;
+        padding-bottom: 32px;
     }
 
     @media screen and (min-width: 1680px) {
         max-width: 1648px;
         padding-top: 60px;
         padding-bottom: 60px;
-    }
-}
-
-.problems__list {
-    display: flex;
-    flex-wrap: wrap;
-
-    counter-reset: number 0;
-
-    @media screen and (min-width: 768px) and (max-width: 1679.98px) {
-        justify-content: center;
-    }
-
-    @media screen and (min-width: 1680px) {
         padding-left: 170px;
     }
-
 }
 
 .problems-list__item {
-    counter-increment: number;
-    
+    position: relative;
     display: block;
-
-
+    counter-increment: number 1;
     font-weight: 700;
     font-size: 14px;
     line-height: 24px;
     letter-spacing: 0.08em;
-    color: var(--main-color);
+
+    &::before {
+        content: "0" counter(number);
+        padding-left: 30px;
+        color: var(--accent-color);
+        
+        @media screen and (max-width: 1679.98px) {
+            margin-bottom: 5px;
+        }
+            
+        @media screen and (min-width: 1680px) {
+            margin-bottom: 8px;
+        }
+    }
 
     @media screen and (max-width: 767.98px) {
         margin-bottom: 16px;
+        width: 280px;
     }
 
     @media screen and (min-width: 768px) and (max-width: 1679.98px) {
         margin-bottom: 44px;
         padding-right: 32px;
-        width: 236px;
+        width: 287px;
     }
 
     @media screen and (min-width: 1680px) {
@@ -135,19 +125,19 @@
         font-size: 20px;
         line-height: 28px;
     }
+}
 
-    &::before {
-        content: counter(number);
-        display: block;
-        border: var(--accent-color);
-        color: var(--accent-color);
-        
-        @media screen and (max-width: 1679.98px) {
-            margin-bottom: 5px;
-        }
+.problems-hyphen {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 12px;
+    left: 0;
+    height: 2px;
+    width: 20px;
+    background: var(--accent-color);
+}
 
-        @media screen and (min-width: 1680px) {
-            margin-bottom: 8px;
-        }
-    }
+.problems-text {
+    color: var(--main-color);
 }
