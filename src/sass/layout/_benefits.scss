@@ -1,0 +1,109 @@
+.benefits {
+    background-image: linear-gradient(
+    to bottom,
+    var(--main-color) 55%,
+    var(--optional-color) 45%);
+
+    padding-bottom: 40px;
+
+    @media screen and (min-width: 768px) {
+        background-image: linear-gradient(
+        to top,
+        var(--optional-color) 70%,
+        var(--main-color) 30%);
+    }
+    
+    @media screen and (min-width: 1680px) {
+        background-image: linear-gradient(
+        to top,
+        var(--optional-color) 60%,
+        var(--main-color) 40%);
+
+        padding-bottom: 80px;
+    }
+}
+
+.benefits__title {
+    @include font-style (800, 26px, 34px, 0.03em);
+    color: var(--optional-color);
+    padding-bottom: 32px;
+
+    @media screen and (min-width: 768px) {
+        text-align: center;
+        padding-bottom: 40px;
+    }
+
+    @media screen and (min-width: 1680px) {
+        display: none;
+    }
+}
+
+.benefits__list {
+    display: flex;
+    flex-wrap: wrap;
+    counter-reset: number 0;
+    padding: 20px 24px 20px 20px;
+
+    background-color: var(--optional-color);
+    box-shadow: -5px 8px 26px rgba(0, 0, 0, 0.04);
+
+    @media screen and (min-width: 768px) and (max-width: 1679.98px) {
+        justify-content: center;
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+
+    @media screen and (min-width: 1680px) {
+        justify-content: center;
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+}
+
+.benefits__item {
+    position: relative;
+    counter-increment: number 1;
+    @include font-style (700, 14px, 24px, 0.08em);
+
+    &::before {
+        content: "0" counter(number);
+        padding-left: 30px;
+        margin-bottom: 8px;
+        color: var(--accent-color);
+    }
+
+    @media screen and (max-width: 767.98px) {
+        margin-bottom: 40px;
+        width: 280px;
+    }
+
+    @media screen and (min-width: 768px) and (max-width: 1679.98px) {
+        margin-bottom: 44px;
+        padding-right: 32px;
+        width: 287px;
+    }
+
+    @media screen and (min-width: 1680px) {
+        margin-bottom: 72px;
+        margin-right: 100px;
+        width: 336px;
+        
+        font-size: 20px;
+        line-height: 1.4;
+    }
+}
+
+.benefits__hyphen {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 12px;
+    left: 0;
+    height: 2px;
+    width: 20px;
+    background: var(--accent-color);
+}
+
+.benefits__text {
+    color: var(--main-color);
+}
