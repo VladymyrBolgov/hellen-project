@@ -78,6 +78,7 @@
     cursor: pointer;
     padding: 14px 32px;
     margin: 0 auto;
+    
 
     color: var(--accent-color);
     background-color: transparent;
@@ -90,6 +91,7 @@
     &:focus {
         color: var(--optional-color);
         border-color: var(--optional-color);
+        transform: scale(1.05);
     }
 
 }
