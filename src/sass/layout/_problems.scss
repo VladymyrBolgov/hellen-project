@@ -11,41 +11,27 @@
     }
 }
 
-.problem__text {
-    font-weight: 800;
-    font-size: 24px;
-    line-height: 130%;
-    letter-spacing: 0.03em;
+.problems__tittle {
+    @include font-style (800, 24px, 31px, 0.03em);
     color: var(--optional-color);
+    max-width: 100%;
+    padding-top: 24px;
+    padding-bottom: 24px;
 
-    @media screen and (max-width: 767.98px) {
-        max-width: 280px;
-        padding-top: 24px;
-        padding-bottom: 24px;
-        padding-left: 0;
-        margin-left: auto;
-        margin-right: auto;
-    }
-
-    @media screen and (min-width: 768px) and (max-width: 1679.98px) {
-        max-width: 704px;
+    @media screen and (min-width: 768px) {
         padding-top: 40px;
         padding-bottom: 25px;
-        padding-left: 0;
     }
 
     @media screen and (min-width: 1680px) {
-        max-width: 1648px;
         padding-top: 80px;
         padding-bottom: 80px;
-        padding-left: 0;
-
         font-size: 46px;
-        line-height: 130%;
+        line-height: 1.3;
     }
 }
 
-.problem__text--color {
+.problems__tittle--color {
     color: var(--accent-color);
 }
 
@@ -57,36 +43,26 @@
     background-color: var(--optional-color);
     box-shadow: -5px 8px 26px rgba(0, 0, 0, 0.04);
 
-    @media screen and (max-width: 767.98px) {
-        padding: 20px 24px 20px 20px;
-        max-width: 280px;
-        margin-left: auto;
-        margin-right: auto;
-    }
+    padding: 20px 32px 20px 32px;
+
 
     @media screen and (min-width: 768px) and (max-width: 1679.98px) {
         justify-content: center;
-        max-width: 704px;
         padding-top: 32px;
         padding-bottom: 32px;
     }
 
     @media screen and (min-width: 1680px) {
-        max-width: 1648px;
+        justify-content: center;
         padding-top: 60px;
         padding-bottom: 60px;
-        padding-left: 170px;
     }
 }
 
 .problems__item {
     position: relative;
-    display: block;
     counter-increment: number 1;
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 24px;
-    letter-spacing: 0.08em;
+    @include font-style (700, 14px, 24px, 0.08em);
 
     &::before {
         content: "0" counter(number);
@@ -119,7 +95,7 @@
         width: 336px;
         
         font-size: 20px;
-        line-height: 28px;
+        line-height: 1.4;
     }
 }
 
