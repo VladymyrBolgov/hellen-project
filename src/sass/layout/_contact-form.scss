@@ -20,6 +20,7 @@
     }
 }
 
+
 .contact__title {
     @include font-style (800, 14px, 18.2px, 0.03em);
     color: var(--optional-color);
@@ -41,8 +42,7 @@
 
 .contact__input {
     display: block;
-    width: 100%;
-    height: 48px;
+    @include size (100%, 48px);
     border: 1px solid rgba(255, 255, 255, 1);
     outline: none;
     background: none;
@@ -87,14 +87,14 @@
     &:focus {
         color: var(--main-color);
         background-color: #e86108;
-    }
+            }
 }
+
 @media screen and (min-width: 768px) {
     .contact {
         background-image: linear-gradient(rgba(17, 21, 24, 0.8),
                 rgba(17, 21, 24, 0.8)), url("/images/contact/bgform-tablet.jpg");
-        padding: 40px;
-
+        
         @media (min-device-pixel-ratio: 2),
         (min-resolution: 192dpi),
         (min-resolution: 2dppx) {
@@ -108,20 +108,24 @@
 
     .contact__title {
         @include font-style (800, 26px, 33.8px, 0.03em);
+        width: 688px;
+        margin-left: auto;
+        margin-right: auto;
+        
     }
 
     .contact__description {
         @include font-style (600, 14px, 17.07px, 0.08em);
         margin-top: 40px;
+              
     }
     .contact__form {
-            margin-top: 24px;
+        margin-top: 24px;
         }
 
     .contact__input {
         box-sizing: border-box;
-        width: 336px;
-        height: 48px;
+        @include size (336px, 48px);
         padding: 15px 24px;
         margin-left: auto;
         margin-right: auto;
@@ -137,7 +141,7 @@
     .contact {
         background-image: linear-gradient(rgba(17, 21, 24, 0.8),
                 rgba(17, 21, 24, 0.8)), url("/images/contact/bgform-desktop.jpg");
-        padding: 80px 295px;
+        padding: 80px 0px;
 
         @media (min-device-pixel-ratio: 2),
         (min-resolution: 192dpi),
@@ -150,6 +154,9 @@
 
     .contact__title {
         @include font-style (800, 46px, 59.8px, 0.03em);
+        width: 1090px;
+        margin-left: auto;
+        margin-right: auto;
     }
 
     .contact__description {
@@ -161,8 +168,7 @@
     }
 
     .contact__input {
-        width: 528px;
-        height: 70px;
+        @include size (528px, 70px);
         padding: 23px 24px;
 
         &::placeholder {
@@ -180,3 +186,5 @@
         padding: 27px 0px;
     }
 }
+
+
