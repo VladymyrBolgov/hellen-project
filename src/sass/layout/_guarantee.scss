@@ -29,13 +29,17 @@
         position: absolute;
         content: '';
         display: block;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
         width: 14px;
         height: 20px;
-        background-image: url("/images/sprite.svg#icon-fire");
+        background-image: url("/images/icon-fire.svg");
         background-size: contain;
-    
-        left: -25px;
-        top: 0;
+        transform: translateX(-50%);
+        z-index: 2;
+
         }
 
     &:not(:last-child)::after {
