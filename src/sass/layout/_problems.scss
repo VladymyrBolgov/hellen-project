@@ -11,7 +11,7 @@
     }
 }
 
-.problems__tittle {
+.problems__title {
     @include font-style (800, 24px, 31px, 0.03em);
     color: var(--optional-color);
     max-width: 100%;
