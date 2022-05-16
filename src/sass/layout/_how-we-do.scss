@@ -2,38 +2,47 @@
     padding-bottom: 40px;
 }
 
-.education__item:not(:last-child) {
-    margin-bottom: 16px;
-
-}
-
 .education__title {
-    @include font-style (800, 20px, 26px, 0.03em);
     color: var(--main-color);
     text-align: center;
+   
+}
+.education__text {
+    color: var(--main-color);
+    text-align: center;
+    position: relative;
+    .education__item:hover & {
+            color: var(--optional-color);
+        }
+}
+.education__discription {
+    color: var(--second-extra-color);
+    text-align: center;
+
+    .education__item:hover &{
+        color: var(--optional-color);
+    }
 }
 
 .education__item {
-    width: 298px;
-    height: 280px;
-    padding-top: 32px;
-    padding-bottom: 8px;
-    padding-left: 4px;
-    padding-right: 4px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-left: 15px;
+    padding-right: 15px;
+    box-sizing: border-box;
     box-shadow: 0px 8px 26px rgba(0, 0, 0, 0.1);
+    text-align: center;
 
     &:hover,
     &:focus {
     background-color: var(--accent-color);
-    color: var(--optional-color);
+    
         }
 }
-
-.education__text {
-    @include font-style (700, 14px, 20px, 0.08em);
-    color: var(--main-color);
-    text-align: center;
-    position: relative;
+.education__item:hover .education__icon{
+    fill: var(--optional-color);
 }
 
 .education__text::after {
@@ -44,7 +53,7 @@
     bottom: 0;
     border-radius: 2px;
     left: 50%;
-    background: black;
+    background: var(--accent-color);
     transform: translateX(-50%);
 }
 .education__item:hover .education__text::after {
@@ -52,26 +61,133 @@
 
 }
 
-.education__discription {
-    @include font-style (500, 12px, 20px, 0.08em);
-    color: var(--second-extra-color);
-    text-align: center;
-    margin: 0px;
-}
-
-
-.education__text {
-    padding-bottom: 18px;
-    margin-bottom: 18px;
-}
-
 .education__icon-box {
     display: flex;
     align-items: center;
     justify-content: center;
-
 }
 .education__icon {
     fill: var(--accent-color);
-    margin-bottom: 20px;
 }
+//480+
+@media screen and (max-width:767.98px){
+    .education__title {
+           @include font-style (800, 20px, 26px, 0.03em);
+            margin-bottom: 30px
+        }
+    .education__item:not(:last-child) {
+             margin-bottom: 16px;
+         }
+    .education__text {
+             @include font-style (700, 14px, 20px, 0.08em);
+         }
+    .education__discription {
+             @include font-style (500, 12px, 20px, 0.08em);
+             
+         }
+    .education__item {
+                     width: 298px;
+                     height: 280px;
+                    } 
+    .education__text {
+                    padding-bottom: 18px;
+                    margin-bottom: 18px;
+          }
+        .education__icon-box {
+            /*width: 298px;
+            height: 80px;*/
+            margin-bottom: 20px;
+        }
+}
+
+//768+
+@media screen and (min-width: 768px){
+    .education__title {
+            @include font-style (800, 26px, 34px, 0.03em);
+            margin-bottom: 40px;
+        }
+         .education__text {
+             @include font-style (700, 14px, 20px, 0.08em);
+         }
+    .education__discription {
+             @include font-style (500, 12px, 20px, 0.08em);
+             
+         }
+     .education__list {
+             display: flex;
+            flex-wrap: wrap;
+            margin-left: -30px;
+            margin-top: -30px;
+         
+}
+    .education__item{
+        
+            margin-left: 30px;
+            margin-top: 30px;
+            flex-basis: calc((100% - 60px) / 2);
+}
+        .education__item {
+            width: 336px;
+            height: 336px;
+                }
+        .education__icon-box {
+            /*width: 336px;
+            height: 90px;*/
+            margin-bottom: 30px;
+}
+        .education__text {
+            padding-bottom: 22px;
+            margin-bottom: 22px;
+        }
+         
+
+}
+
+//1680+
+@media screen and (min-width: 1680px){
+    .education__title {
+            @include font-style (800, 46px, 60px, 0.03em);
+            margin-bottom: 40px;
+            text-align: start;
+        }
+         .education__text {
+             @include font-style (700, 20px, 28px, 0.08em);
+         }
+    
+         .education__discription {
+             @include font-style (500, 18px, 28px, 0.08em);
+    
+         }
+                .education__list {
+                    display: flex;
+                    flex-wrap: wrap;
+                    margin-left: -30px;
+                    margin-top: -30px;
+                }
+        
+                .education__item {
+                    padding-left: 80px;
+                    padding-right: 80px;
+                    padding-top: 90px;
+                    margin-left: 30px;
+                    margin-top: 30px;
+                    flex-basis: calc((100% - 90px) / 3);
+                }
+                .education__item {
+                    width: 528px;
+                    height: 492px;;
+    
+                }
+                  .education__icon-box {
+                      /*width: 528px;
+                      height: 140px;*/
+                      margin-bottom: 30px;
+                  }
+
+                
+                 .education__text {
+                     padding-bottom: 18px;
+                     margin-bottom: 18px;
+                 }
+}
+

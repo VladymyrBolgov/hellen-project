@@ -1,0 +1,113 @@
+.connection__thumb {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.connection__wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.connection__logo {
+    margin-bottom: 20px;
+    transition: transform 250ms cubic-bezier(0.165, 0.84, 0.44, 1);
+
+    &:hover,
+    &:focus {
+        transform: scale(1.2);
+    }
+}
+
+.connection__phone {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+    @include font-style (600, 14px, 17px, 0.08em);
+    color: #111518;
+    transition: color 250ms cubic-bezier(0.215, 0.610, 0.355, 1);
+
+    &:hover,
+    &:focus {
+        color: var(--accent-color);
+    }
+}
+
+.connection__phone-icon {
+    margin-right: 8px;
+    transition: transform 250ms cubic-bezier(0.215, 0.610, 0.355, 1);
+
+    .connection__phone:hover>&,
+    .connection__phone:focus>& {
+        transform: scale(1.2);
+    }
+}
+
+.connection__social-link {
+    background-image: linear-gradient(#ffffff 100%, #7D3AB4 0%, #833AB4 0%, #833AB4 0%, #833AB4 0%, #833AB4 100%, #A1B5D8 0%, #FAE100 0%, #FAE100 100%);
+}
+
+.connection__social-icon {
+   
+    transition: transform 250ms cubic-bezier(0.215, 0.610, 0.355, 1);
+
+    .connection__social-link:hover>&,
+    .connection__social-link:focus>& {
+        transform: scale(1.2);
+    }
+}
+@media screen and (min-width: 768px) {
+    .connection__thumb {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .connection__logo {
+        margin: 0px;
+    }
+
+    .connection__wrapper {
+        flex-direction: row;
+    }
+
+    .connection__phone {
+        margin-right: 24px;
+        margin-bottom: 0px;
+        @include font-style (600, 20px, 24px, 0.08em);
+
+        &::after {
+            content: ' ';
+            display: block;
+            margin-left: 24px;
+            height: 40px;
+            border: 1px solid #B9B9B9;
+        }
+    }
+}
+
+@media screen and (min-width: 1680px) {
+    .connection__thumb {
+        justify-content: flex-start;
+    }
+
+    .connection__wrapper {
+        justify-content: center;
+    }
+
+        .connection__logo {
+            margin-right: 452px;
+        }
+
+    .connection__phone {
+        @include font-style (600, 30px, 37px, 0.08em);
+    }
+
+    .connection__phone-icon {
+        margin-right: 16px;
+    }
+}

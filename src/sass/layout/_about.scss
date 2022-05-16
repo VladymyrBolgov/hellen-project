@@ -20,16 +20,33 @@
     &:not(:last-child){
         margin-bottom: 20px;
     }
-    
+}
+/* проверять тут*/
+.about__item{
+    display: flex;
+}
+.about__icon{
+    fill: var(--accent-color);
+    margin-right:  9px;
+}
+
+/*оранжевая линия*/
+.about__list{
+    position: relative;
+    padding-bottom: 30px;
+    margin-bottom: 30px;
 }
 .about__list::after{
     content: '';
+position: absolute;
+    bottom: 0;
+    left: 0;
     display: block;
-    width: 20px;
     border: 20px;
+
+    width: 20px;
     height: 1px;
     background-color: var(--accent-color);
-    
 }
 
 .about__list{
@@ -47,5 +64,36 @@
     @include font-style (500, 12px, 20px, 0.08em);
     text-decoration-line: underline;
     color: var(--accent-color);
+}
+
+@media screen and (min-width: 768px){
+    .about__container{
+        display: flex;
+        }   
+    .about__title{
+        padding-top: 40px; 
+        padding-bottom: 40px;
+    }
+    .about__wrapper{
+        padding-top: 112px; 
+        width: 402px; 
+        margin-left: 60px;
+    }
+}
+
+@media screen and (min-width: 1680px) {
+        .about__title{
+            padding-top: 80px; 
+            padding-bottom: 80px;
+        }
+        .about__wrapper{
+            padding-top: 217px; 
+            width: 668px; 
+            margin-left: 172px;
+        }
+        /* проверять тут*/
+        .about__icon{
+            margin-right: 35px;
+        }
 }
 

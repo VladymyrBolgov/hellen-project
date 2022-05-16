@@ -1,74 +1,96 @@
-<section class="about">
-    <div class="container">
-        <div class="about__box">
-            <h2 class="about__title">Teacher</h2>       
-            <picture class="about__img">
-            <source
-                srcset="/images/about/desktop/teacher-desktop-1.webp 1x, /images/about/desktop/teacher-desktop-2@2x.webp 2x"
-                media="(min-width:1680px)" type="image/webp">
-            <source
-                srcset="/images/about/desktop/teacher-desktop-1.jpg 1x, /images/about/desktop/teacher-desktop-2@2x.jpg 2x"
-                media="(min-width:1680px)">
-            <source
-                srcset="/images/about/mob-tab/teacher-mob-1.webp 1x, /images/about/mob-tab/teacher-mob-2@2x.webp 2x"
-                media="(min-width:768px)" type="image/webp">
-            <source 
-                srcset="/images/about/mob-tab/teacher-mob-1.jpg 1x, /images/about/mob-tab/teacher-mob-2@2x.jpg 2x"
-                media="(min-width:768px)">
-            <source
-                srcset="/images/about/mob-tab/teacher-mob-1.webp 1x, /images/about/mob-tab/teacher-mob-2@2x.webp 2x"
-                media="(max-width:767.98px)" type="image/webp">
-        
-            <source 
-                srcset="/images/about/mob-tab/teacher-mob-1.jpg 1x, /images/about/mob-tab/teacher-mob-2@2x.jpg 2x"
-                media="(max-width:767.98px)"> 
-                <img src="/images/about/mob-tab/teacher-mob-1.jpg" alt="Фото Elena Moreva">
-            </picture>
-        </div>
-        <div class="about__wrapper">
-            <h2 class="about__description">Elena Moreva</h2>
-            <!--разделение серой чертой полностью-->
-            <ul class="about__list">
-                <li class="about__item">
-                    6 yeards of experience in
-                    preparing students for UPE   
-                </li>
-                <li class="about__item">
-                    Own result of passing VNO - 
-                    197 points 2 years in a row
-                </li>
-                <li class="about__item">
-                    Passed excellent at the 
-                    international analogue of UPE - 
-                    Cambridge PET (Preliminary English Test)  
-                </li>
-            </ul>
-            <!--разделение короткой оранжево чертой -->
-            <div class="about__text-container">
-                <p class="about__text">
-                    Graduated from the Institute of International
-                    Relations of the NAU with a degree in
-                    translator-analyst.
-                </p>
-                <p class="about__text">
-                    In spare time takes courses from the best
-                    universities in the world on effective teaching
-                    and essay writing techniques.
-                </p>
-                <p class="about__text">
-                    Completed: English Grammar and Essay Writing 
-                    (Berkeley), English Grammar & Style 
-                    (The University of Queesland), How to Write
-                    an Essay (Berkeley), Academic and Business 
-                    Writing (Berkeley), The Art of Teaching 
-                    (GEMS education), Powerful Tools for Teaching 
-                    and Learning (University of Houston).
-                </p>
-            </div>
-                <a class="about__link" href="#">
-                    Cambrige English Entry Level Certificate
-                </a>
-        </div>   
+<section class="about" id="about">
+  <div class="about__container container">
+    <h2 class="about__title">Teacher</h2>
+    <picture class="about__box">
+      <source
+        srcset="
+          /images/about/desktop/teacher-desktop-1.webp    1x,
+          /images/about/desktop/teacher-desktop-2@2x.webp 2x
+        "
+        media="(min-width:1680px)"
+        type="image/webp"
+      />
+      <source
+        srcset="
+          /images/about/desktop/teacher-desktop-1.jpg    1x,
+          /images/about/desktop/teacher-desktop-2@2x.jpg 2x
+        "
+        media="(min-width:1680px)"
+      />
+      <source
+        srcset="
+          /images/about/mob-tab/teacher-mob-1.webp    1x,
+          /images/about/mob-tab/teacher-mob-2@2x.webp 2x
+        "
+        media="(min-width:768px)"
+        type="image/webp"
+      />
+      <source
+        srcset="
+          /images/about/mob-tab/teacher-mob-1.jpg    1x,
+          /images/about/mob-tab/teacher-mob-2@2x.jpg 2x
+        "
+        media="(min-width:768px)"
+      />
+      <source
+        srcset="
+          /images/about/mob-tab/teacher-mob-1.webp    1x,
+          /images/about/mob-tab/teacher-mob-2@2x.webp 2x
+        "
+        media="(max-width:767.98px)"
+        type="image/webp"
+      />
+      <source
+        srcset="
+          /images/about/mob-tab/teacher-mob-1.jpg    1x,
+          /images/about/mob-tab/teacher-mob-2@2x.jpg 2x
+        "
+        media="(max-width:767.98px)"
+      />
+      <img src="/images/about/mob-tab/teacher-mob-1.jpg" alt="Фото Elena Moreva" />
+    </picture>
+    <div class="about__wrapper">
+      <h2 class="about__description">Elena Moreva</h2>
+      <!--разделение серой чертой полностью-->
+      <ul class="about__list">
+        <li class="about__item">
+          <svg class="about__icon" width="17" height="14">
+            <use href="/images/sprite.svg#icon-markteacher"></use>
+          </svg>
+          6 yeards of experience in preparing students for UPE
+        </li>
+        <li class="about__item">
+          <svg class="about__icon" width="17" height="14">
+            <use href="/images/sprite.svg#icon-markteacher"></use>
+          </svg>
+          Own result of passing VNO - 197 points 2 years in a row
+        </li>
+        <li class="about__item">
+          <svg class="about__icon" width="17" height="14">
+            <use href="/images/sprite.svg#icon-markteacher"></use>
+          </svg>
+          Passed excellent at the international analogue of UPE - Cambridge PET (Preliminary English
+          Test)
+        </li>
+      </ul>
+      <!--разделение короткой оранжево чертой -->
+      <div class="about__text-container">
+        <p class="about__text">
+          Graduated from the Institute of International Relations of the NAU with a degree in
+          translator-analyst.
+        </p>
+        <p class="about__text">
+          In spare time takes courses from the best universities in the world on effective teaching
+          and essay writing techniques.
+        </p>
+        <p class="about__text">
+          Completed: English Grammar and Essay Writing (Berkeley), English Grammar & Style (The
+          University of Queesland), How to Write an Essay (Berkeley), Academic and Business Writing
+          (Berkeley), The Art of Teaching (GEMS education), Powerful Tools for Teaching and Learning
+          (University of Houston).
+        </p>
+      </div>
+      <a class="about__link" href="#"> Cambrige English Entry Level Certificate </a>
     </div>
   </div>
 </section>
