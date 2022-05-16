@@ -11,6 +11,8 @@
     color: var(--main-color);
     text-align: center;
     position: relative;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
     .education__item:hover & {
             color: var(--optional-color);
         }
@@ -18,8 +20,9 @@
 .education__discription {
     color: var(--second-extra-color);
     text-align: center;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
-    .education__item:hover &{
+    .education__item:hover & {
         color: var(--optional-color);
     }
 }
@@ -34,14 +37,15 @@
     box-sizing: border-box;
     box-shadow: 0px 8px 26px rgba(0, 0, 0, 0.1);
     text-align: center;
+    transform: scale(1);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
-    &:hover,
-    &:focus {
+    &:hover{
     background-color: var(--accent-color);
-    
+    transform: scale(1.06);
         }
 }
-.education__item:hover .education__icon{
+.education__item:hover .education__icon {
     fill: var(--optional-color);
 }
 
@@ -55,6 +59,7 @@
     left: 50%;
     background: var(--accent-color);
     transform: translateX(-50%);
+    transition: background 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .education__item:hover .education__text::after {
     background: var(--optional-color);
@@ -68,6 +73,7 @@
 }
 .education__icon {
     fill: var(--accent-color);
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 //480+
 @media screen and (max-width:767.98px){
@@ -175,7 +181,7 @@
                 }
                 .education__item {
                     width: 528px;
-                    height: 492px;;
+                    height: 492px;
     
                 }
                   .education__icon-box {
