@@ -20,6 +20,7 @@
     }
 }
 
+
 .contact__title {
     @include font-style (800, 14px, 18.2px, 0.03em);
     color: var(--optional-color);
@@ -93,8 +94,7 @@
     .contact {
         background-image: linear-gradient(rgba(17, 21, 24, 0.8),
                 rgba(17, 21, 24, 0.8)), url("/images/contact/bgform-tablet.jpg");
-        padding: 40px;
-
+        
         @media (min-device-pixel-ratio: 2),
         (min-resolution: 192dpi),
         (min-resolution: 2dppx) {
@@ -108,14 +108,19 @@
 
     .contact__title {
         @include font-style (800, 26px, 33.8px, 0.03em);
+        width: 688px;
+        margin-left: auto;
+        margin-right: auto;
+        
     }
 
     .contact__description {
         @include font-style (600, 14px, 17.07px, 0.08em);
         margin-top: 40px;
+              
     }
     .contact__form {
-            margin-top: 24px;
+        margin-top: 24px;
         }
 
     .contact__input {
@@ -136,7 +141,7 @@
     .contact {
         background-image: linear-gradient(rgba(17, 21, 24, 0.8),
                 rgba(17, 21, 24, 0.8)), url("/images/contact/bgform-desktop.jpg");
-        padding: 80px 295px;
+        padding: 80px 0px;
 
         @media (min-device-pixel-ratio: 2),
         (min-resolution: 192dpi),
@@ -149,6 +154,9 @@
 
     .contact__title {
         @include font-style (800, 46px, 59.8px, 0.03em);
+        width: 1090px;
+        margin-left: auto;
+        margin-right: auto;
     }
 
     .contact__description {
@@ -178,94 +186,5 @@
         padding: 27px 0px;
     }
 }
-@media screen and (min-width: 768px) {
-    .contact {
-        background-image: linear-gradient(rgba(17, 21, 24, 0.8),
-                rgba(17, 21, 24, 0.8)), url("/images/contact/bgform-tablet.jpg");
-        padding: 40px;
 
-        @media (min-device-pixel-ratio: 2),
-        (min-resolution: 192dpi),
-        (min-resolution: 2dppx) {
-            .contact {
-                background-image: linear-gradient(rgba(17, 21, 24, 0.8),
-                        rgba(17, 21, 24, 0.8)), url("/images/contact/bgform-tablet@2x.jpg");
-            }
-        }
 
-    }
-
-    .contact__title {
-        @include font-style (800, 26px, 33.8px, 0.03em);
-    }
-
-    .contact__description {
-        @include font-style (600, 14px, 17.07px, 0.08em);
-        margin-top: 40px;
-    }
-    .contact__form {
-            margin-top: 24px;
-        }
-
-    .contact__input {
-        box-sizing: border-box;
-        width: 336px;
-        height: 48px;
-        padding: 15px 24px;
-        margin-left: auto;
-        margin-right: auto;
-    }
-
-    .contact__btn {
-        width: 335px;
-        margin-top: 32px;
-    }
-}
-
-@media screen and (min-width: 1680px) {
-    .contact {
-        background-image: linear-gradient(rgba(17, 21, 24, 0.8),
-                rgba(17, 21, 24, 0.8)), url("/images/contact/bgform-desktop.jpg");
-        padding: 80px 295px;
-
-        @media (min-device-pixel-ratio: 2),
-        (min-resolution: 192dpi),
-        (min-resolution: 2dppx) {
-            .contact {
-                background-image: url("/images/contact/bgform-desktop@2x.jpg");
-            }
-        }
-    }
-
-    .contact__title {
-        @include font-style (800, 46px, 59.8px, 0.03em);
-    }
-
-    .contact__description {
-        @include font-style (600, 30px, 36.57px, 0.08em);
-    }
-
-    .contact__form {
-        margin-top: 60px;
-    }
-
-    .contact__input {
-        width: 528px;
-        height: 70px;
-        padding: 23px 24px;
-
-        &::placeholder {
-            @include font-style (600, 20px, 24.38px, 0.08em);
-        }
-        &:nth-child(2) {
-            margin-top: 32px;
-        }
-    }
-
-    .contact__btn {
-        @include font-style (700, 14px, 17.07px, 0.14em);
-        width: 528px;
-        margin-top: 40px;
-        padding: 27px 0px;
-    }
-}
