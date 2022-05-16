@@ -1,4 +1,4 @@
-<section class="program">
+<section class="program" id="program">
   <div class="container program__container">
     <h2 class="program__title">Our program</h2>
     <ul class="program__list">
@@ -103,44 +103,46 @@
       </li>
       <li class="program__item">
         <h3 class="program__term">5 semester</h3>
-        <ul class="program__order ">
-          <b class="program__subject"></b>
-          <li class="program__topic">Revision</li>
+        <ul class="program__order program__order--pseudo">
+          <div class="program__order-wrapper">
+          <!-- <b class="program__subject program__subject--pseudo">a</b> -->
+          <li class="program__topic program__subject--pseudo">Revision</li>
           <li class="program__topic">Tests</li>
+          </div>
         </ul>
       </li>
     </ul>
-    <picture class="program__picture">
+    <picture >
       <source
-        srcset="./images/lesson-desktop.webp 1x, ./images/lesson-desktop@2x.webp 2x"
+        srcset="/images/lesson-desktop.webp 1x, /images/lesson-desktop@2x.webp 2x"
         media="(min-width: 1680px)"
         type="image/webp"
       />
       <source
-        srcset="./images/lesson-desktop.jpg 1x, ./images/lesson-desktop@2x.jpg 2x"
+        srcset="/images/lesson-desktop.jpg 1x, /images/lesson-desktop@2x.jpg 2x"
         media="(min-width: 1680px)"
       />
 
       <source
-        srcset="./images/lesson-tablet.webp 1x, ./images/lesson-tablet@2x.webp 2x"
+        srcset="/images/lesson-tablet.webp 1x, /images/lesson-tablet@2x.webp 2x"
         media="(min-width: 768px)"
         type="image/webp"
       />
       <source
-        srcset="./images/lesson-tablet.jpg 1x, ./images/lesson-tablet@2x.jpg 2x"
+        srcset="/images/lesson-tablet.jpg 1x, /images/lesson-tablet@2x.jpg 2x"
         media="(min-width: 768px)"
       />
 
       <source
-        srcset="./images/lesson-mobile.webp 1x, ./images/lesson-mobile@2x.webp 2x"
+        srcset="/images/lesson-mobile.webp 1x, /images/lesson-mobile@2x.webp 2x"
         media="(max-width: 767px)"
         type="image/webp"
       />
       <source
-        srcset="./images/lesson-mobile.jpg 1x, ./images/lesson-mobile@2x.jpg 2x"
+        srcset="/images/lesson-mobile.jpg 1x, /images/lesson-mobile@2x.jpg 2x"
         media="(max-width: 767px)"
       />
-      <img src="./images/lesson-desktop.jpg" alt="English lesson" />
+      <img class="program__picture" src="./images/lesson-desktop.jpg" alt="English lesson" />
     </picture>
   </div>
 </section>

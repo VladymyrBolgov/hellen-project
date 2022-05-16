@@ -1,29 +1,25 @@
 .program {
     background-color: var(--main-color);
-
 }
 .program__container {
     padding-top: 40px;
 }
-
 .program__list {
     text-align: left;
 }
-
 .program__title {
-    @include font-style (800, 20px, 26px, 0.03em);
     margin-bottom: 40px;
+
+    @include font-style (800, 20px, 26px, 0.03em);
+    
     color: var(--optional-color);
 }
-
 .program__term {
-
     @include font-style (700, 14px, 28px, 0.08em);
     text-transform: uppercase;
 
     margin-bottom: 12px;
     color: var(--optional-color);
-    
 }
 
 .program__subject {
@@ -33,33 +29,36 @@
 }
 
 .program__topic {
-    @include font-style (500, 12px, 20px, 0.08em);
-
-    color: var(--second-extra-color);
-    opacity: 0.5;
     position: relative;
+    opacity: 0.5;
+
+    @include font-style (500, 12px, 20px, 0.08em);
+    color: var(--second-extra-color);
 }
 .program__term {
-    line-height: 0;
     position: relative;
+    line-height: 0;
 }
 .program__term::before {
-    position: absolute;
     content: '';
+    position: absolute;
     display: block;
-    border-radius: 50%;  
     left: -26px;
     top: -6px;
+
     height: 12px;
-    min-width: 12px;
+    width: 12px;
+    border-radius: 50%;
+
     background: var(--accent-color);
     transform: rotate(90deg);
     }
-.program__subject{
+.program__subject {
     position: relative;
     padding-left: 18px;
     display: block;
     }
+
 .program__subject::before {
     content: '';
     display: block;
@@ -67,56 +66,100 @@
     top: 11px;
     left: 1px;
     height: 1px;
-    min-width: 12px;
+    width: 12px;
     background: var(--accent-color);
+}
+// .program__subject--pseudo {
+//     display: block;
+//     color: transparent;
+// }
+.program__subject--pseudo::before {
+    content: '';
+        display: block;
+        position: absolute;
+        top: -20px;
+        left: 1px;
+        height: 1px;
+        min-width: 12px;
+        background: var(--accent-color);
+}
+.program__order--pseudo {
+    padding-top: 30px;
+}
+.program__picture {
+    position: relative;
+    opacity: 0.5;
 }
 // mobile+tablet
 @media screen and (max-width: 1679px) {
     .program__item:not(:last-child) {
         margin-bottom: 40px;
     }
-
     .program__list {
         border-left: 1px solid var(--optional-color);
         padding-left: 20px;
         line-height: 0;
     }
-
     .program__container {
         padding-left: 56px;
     }
-
+}
+// only mobile
+@media screen and (max-width: 767.98px) {
+    .program__order-list:not(:last-child) {
+        margin-bottom: 20px;
+    }
+    .program__picture {
+        top: -35px;
+        left: 40%;
+    }
+    .program__list {
+        display: flex;
+        flex-direction: column;
+        }
 }
 
-// tablet
-@media screen and (min-width: 768px) and (max-width: 1679px) {
+@media screen and (min-width: 768px) {
     .program__title {
         @include font-style (800, 20px, 34px, 0.03em);
-        margin-bottom: 48px;
-    }
-        .program__topic {
-            margin-right: 66px;
-        }
-    .program__order {
-        display: flex;
-    }
-
-    .program__list {
-        border-left: 1px solid var(--optional-color);
-        padding-left: 108px;
-    }
-
-    .program__container {
-        padding-left: 88px;
     }
     .program__term::before {
         left: -114px;
         top: -6px;
     }
 }
+// only tablet
+@media screen and (min-width: 768px) and (max-width: 1679px) {
+    .program__title {
+        margin-bottom: 48px;
+    }
+    .program__order {
+        display: flex;
+    }
+    .program__list {
+        padding-left: 108px;
+    }
+    .program__container {
+        padding-left: 88px;
+        padding-top: 75px;
+    }
+    .program__order-list {
+        min-width: 140px;
+    }
+    .program__order-list:not(:last-child) {
+        margin-right: 32px;
+    }
+    .program__picture {
+        top: -135px;
+        left: 46%;
+    }
+}
 
 
 @media screen and (min-width: 1680px) {
+    .program__container {
+        padding-top: 80px;
+    }
     .program__title {
         @include font-style (800, 46px, 60px, 0.03em);
         margin-bottom: 88px;
@@ -160,5 +203,8 @@
         top: 16px;
         
         width: 20px;
+    }
+    .program__picture {
+        top: -135px;
     }
 }

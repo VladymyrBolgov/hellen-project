@@ -1,19 +1,39 @@
 .hero{
-    font-family: 'Montserrat';
     font-style: normal;
     font-weight: 700;
     line-height: 1.57;
     letter-spacing: 0.08em;
-    padding-top: 20px;
+    padding-top: 40px;
+    padding-bottom: 60px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    animation: fadeInDown 1000ms forwards;
+        
+    @media screen and (max-width:767.98px) {
+        background-image: url("/images/hero-img/bg-hero-tablet.png");
+        background-position: -64px 29px;
+        padding-top: 89px;
+    }
+
     @media screen and (min-width: 768px) {
-        padding-top: 80px;
+        background-image: url("/images/hero-img/bg-hero-tablet.png");
+        background-position: left 0px bottom -47px;
+        padding-top: 168px;
+        padding-bottom: 126px;
+    }
+
+    @media screen and (min-width: 1680px) {
+        background-image: url("/images/hero-img/bg-hero-desktop.png");  
+        padding-top: 190px;
+        padding-bottom: 264px;
     }
 
     &__container{
-    @media screen and (min-width: 768px) {
-        display: flex;
-        justify-content: space-between;
-    }
+        @media screen and (min-width: 768px) {
+            display: flex;
+            justify-content: space-between;
+            position: relative;
+        }
     }
 
     &__text-contaier{
@@ -25,15 +45,16 @@
     &__content-wrapper{
         margin-bottom: 40px;
         
-            @media screen and (min-width: 768px) {
-                margin-bottom: 0;
-            }        
+        @media screen and (min-width: 768px) {
+            margin-bottom: 0;
+            width: 330px;
+        }       
+        @media screen and (min-width: 1680px) {
+            width: 560px;
+        }
     }
     &__title{
-        font-weight: 800;
-        font-size: 20px;
-        line-height: 1.3;
-        letter-spacing: 0.03em;
+        @include font-style (800, 20px, 26px, 0.03em);
         margin-bottom: 8px;
 
         @media screen and (min-width: 768px) {
@@ -50,12 +71,14 @@
         @media screen and (min-width: 1680px) {
             font-size: 20px;
             line-height: 1.65;
-            }
+        }
 
     }
     &__main-text-wrapper{
+        display: flex;
+        flex-direction: column;
         @media screen and (min-width: 1680px) {
-            display: flex;
+        flex-direction: row;
         }
     }
     &__main-text{
@@ -76,44 +99,122 @@
         }
     }
     &__btn{
+        @include font-style (700, 15px, 15px, 0.08em);
         min-width: 280px;
         height: 48px;
-        font-size: 12px;
-        line-height: 1.25;
         text-align: center;
-        letter-spacing: 0.08em;
         text-transform: uppercase;
         color: var(--optional-color);
         background-color: var(--accent-color);
         border: 2px solid var(--accent-color);
-            @media screen and (min-width: 768px) {
-                min-width: 260px;
+        transition: transform 250ms linear;
+        
+        &:hover,
+        &:focus {
+            box-shadow: (2px 2px 4px 2px rgba(255, 107, 9, 0.25));
+            transform: scale(1.05);
             }
-            @media screen and (min-width: 1680px) {
-                min-width: 354px;
-                height: 70px;
-                font-size: 14px;
-                line-height: 1.21;
-                padding: 0 70px;
 
-            }
+        @media screen and (max-width: 767.98px) {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto;
+        }
+        @media screen and (min-width: 768px) {
+            min-width: 260px;
+        }
+        @media screen and (min-width: 1680px) {
+            min-width: 354px;
+            height: 70px;
+            font-size: 14px;
+            line-height: 1.21;
+            padding: 0 70px;
+        }
     }
+
+
+        @keyframes scaleCircle {
+            from {
+                    transform: scale(0.2);            }
+                to {
+                    transform: scale(1);
+                }
+            }
+
+
 
     &__img{
-        flex: 0 0 208px;
-        height: 178px;
-        background-color: teal;
-        margin: 0 auto;
+        animation: imgScale 1200ms forwards;
+        background-position: 66% 34%;
+        background-repeat: no-repeat;
+        background-size: contain;
 
-            @media screen and (min-width: 768px) {
-                flex: 0 0 376px;
-                height: 321px;
-                margin: 0;
+        @media screen and (max-width:767.98px) {
+            background-image: url("/images/hero-img/img-hero-mobile2.png"), url("/images/hero-img/img-hero-mobile1.png");
+            @include size (208px, 178px);
+            margin-left: auto;
+            margin-right: auto;
+
+            @media (min-device-pixel-ratio: 2),
+                (min-resolution: 192dpi),
+                (min-resolution: 2dppx) {
+                background-image: url("/images/hero-img/img-hero-mobile2@2x.png"), url("/images/hero-img/img-hero-mobile1@2x.png");
             }
-            @media screen and (min-width: 1680px) {
-                flex: 0 0 842px;
-                height: 718px;
-                margin: 0;
+        }
+
+        @media screen and (min-width: 768px) {
+            background-image: url("/images/hero-img/img-hero-tablet2.png"), url("/images/hero-img/img-hero-tablet1.png");
+
+            position: absolute;
+            right: 15px;
+            @include size (376px, 321px);
+            margin: 0;
+    
+            @media (min-device-pixel-ratio: 2),
+                (min-resolution: 192dpi),
+                (min-resolution: 2dppx) {
+                background-image: url("/images/hero-img/img-hero-tablet2@2x.png"), url("/images/hero-img/img-hero-tablet1@2x.png");
             }
+        }
+
+        @media screen and (min-width: 1680px) {
+            background-image: url("/images/hero-img/img-hero-desktop2.png"), url("/images/hero-img/img-hero-desktop1.png");
+            top: -37px;
+            @include size (842px, 718px);
+
+            @media (min-device-pixel-ratio: 2),
+                (min-resolution: 192dpi),
+                (min-resolution: 2dppx) {
+                background-image: url("/images/hero-img/img-hero-desktop2@2x.png"), url("/images/hero-img/img-hero-desktop1@2x.png");
+            }
+
+        }
     }
 }
+
+// Animation 1 version
+        // @keyframes heroMove {
+        //     from {
+        //         opacity: 0.1;
+        //         transform: translateY(-100%);
+        //     }
+
+        //     to {
+        //         opacity: 1;
+        //         transform: translateY(0);
+        //     }
+        // }
+        @keyframes imgScale {
+            from {
+                opacity: 0.1;
+                transform: scale(0);
+            }
+
+            to {
+                transform: scale(1);
+                opacity: 1;
+            }
+        }
+
+

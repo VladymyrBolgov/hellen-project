@@ -8,14 +8,13 @@
 }
 
 .guarantee__list {
-    padding-top: 40px;
-    padding-bottom: 40px;
-    padding-left: 40px;
+    padding: 40px 10px 40px 10px;
     background-color: #F1F1F1;
 }
 
 .guarantee__item{
     position: relative;
+    padding-left: 20px;
     color: var(--extra-color);
     
     @include font-style (500, 12px, 20px, 0.03em);
@@ -30,14 +29,17 @@
         position: absolute;
         content: '';
         display: block;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
         width: 14px;
         height: 20px;
-        // background-image: url("/src/images/about/symbol-defs\ \(3\).svg#icon-fire");
+        background-image: url("/images/icon-fire.svg");
         background-size: contain;
-    
-        
-        left: -25px;
-        top: 0;
+        transform: translateX(-50%);
+        z-index: 2;
+
         }
 
     &:not(:last-child)::after {
@@ -47,7 +49,7 @@
         width: 1px;
         bottom: -21px;
         top: 23px;
-        left: -19px;
+        left: 0;
 }
 
 }
@@ -58,18 +60,18 @@
 
 @media screen and (min-width: 767.98px) {
     .guarantee__list {
-        padding-left: 126px;
-        padding-top: 32px;
-        padding-bottom: 32px;
+        padding: 32px 58px 32px 87px;
+    }
+
+    .guarantee__item{
+        padding-left: 25px;
     }
 
 }
 
 @media screen and (min-width: 1679.98px) {
     .guarantee__list {
-        padding-left: 332px;
-        padding-top: 60px;
-        padding-bottom: 60px;
+        padding: 60px 278px 60px 280px;
     }
 
     .guarantee__title {
@@ -77,6 +79,7 @@
     }
 
     .guarantee__item {
+        padding-left: 30px;
         @include font-style (500, 20px, 28px, 0.03em);
     
         &::before {

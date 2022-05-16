@@ -1,0 +1,69 @@
+  .advantages__item {
+    display: flex;
+    align-items: center;
+  }
+    .advantages-container {
+      padding-top: 40px;
+      padding-bottom: 80px;
+    }
+// 0px-1679px
+@media screen and (max-width:1679px){
+  // @include font-size (500, 14px, 28px, 0.03em);
+.advantages__description{
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.64;
+}
+.advantages__description {
+  margin-left: 12px;
+}
+.advantages__icon {
+  width: 60px;
+  height: 60px;
+}
+}
+
+// 0px-767px 
+@media screen and (max-width:767px){
+    .advantages__item:not(:last-child) {
+  margin-bottom: 24px;
+  }
+
+.advantages__description{
+  width: 209px;
+  }
+.advantages-container {
+  padding-bottom: 40px;
+  }
+}
+
+// TABLET  
+@media screen and (min-width:768px){
+.advantages__list {
+  display: flex;
+  justify-content: flex-start;
+  }
+  .advantages__item:not(:last-child) {
+  margin-right: 21px;
+  }
+.advantages__description {
+  width: 146px;
+  }
+}
+
+// DESKTOP 
+@media screen and (min-width:1680px) {
+.advantages__description {
+  margin-left: -18px;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.65;
+  letter-spacing: 8%;
+  }
+.advantages__description {
+  width: 366px;
+  }
+    .advantages__item:not(:last-child) {
+      margin-right: 112px;
+    }
+}

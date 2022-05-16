@@ -1,9 +1,45 @@
+.about {
+    padding-bottom: 40px;
+
+    @media screen and (min-width:1680px) {
+        padding-bottom: 120px;
+    }
+}
+    .about__box {
+
+        @media screen and (min-width:768px) {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        @media screen and (min-width:1680px) {
+            justify-content: flex-start;
+        }
+}
+
+.about__img {
+    display: block;
+    width: 243px;
+
+    @media screen and (max-width: 767.98px) {
+                margin-bottom: 20px;
+        }
+    @media screen and (min-width:1680px) {
+        width: 528px;
+        margin-right: 172px;
+    }
+}
 
 .about__title{
     @include font-style (800, 20px, 26px, 0.03em);
     color: var(--main-color);
     margin-bottom: 20px;
+
+        @media screen and (min-width:1680px) {
+            font-size: 46px;
+        }
 }
+
 .about__description{
     @include font-style (800, 20px, 26px, 0.03em);
     color: var(--main-color);
@@ -13,39 +49,96 @@
     margin-bottom: 20px;
 }
 
-.about__item{
-    @include font-style (600, 14px, 17px, 0.06em);
-    color: var(--main-color);
+  .about__wrapper {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
 
+@media screen and (min-width:768px) {
+        width: 400px;
+    }
+      @media screen and (min-width:1680px) {
+          width: 668px;
+      }
+  }
+
+
+/*оранжевая линия*/
+.about__list {
+    position: relative;
+    padding-bottom: 30px;
+    margin-bottom: 20px;
+}
+
+.about__list::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    display: block;
+    border: 20px;
+
+    width: 20px;
+    height: 1px;
+    background-color: var(--accent-color);
+}
+
+.about__item {
+    display: flex;
     &:not(:last-child){
         margin-bottom: 20px;
     }
-    
-}
-.about__list::after{
-    content: '';
-    display: block;
-    width: 20px;
-    border: 20px;
-    height: 1px;
-    background-color: var(--accent-color);
-    
 }
 
-.about__list{
-    margin-bottom: 20px
+/* проверять тут*/
+.about__content {
+@include font-style (600, 14px, 17px, 0.06em);
+    color: var(--main-color);
+
+    @media screen and (min-width:768px) {
+        font-size: 12px;
+        line-height: 1.25;
+    }
+
+    @media screen and (min-width:1680px) {
+    font-size: 16px;
+    }
+}
+
+.about__icon{
+    width: 17px;
+    height: 14px;
+    fill: var(--accent-color);
+    margin-right:  9px;
+}
+
+// текст
+.about__text-container {
+    margin-bottom: 8px;
 }
 
 .about__text{
     @include font-style (500, 12px, 20px, 0.08em);
     color: var(--second-extra-color); 
+
+    @media screen and (min-width:768px) {
+        font-size: 10px;
+    }
+        @media screen and (min-width:1680px) {
+            font-size: 18px;
+            line-height: 1.56;
+        }
 }
-.about__text-container{
-    margin-bottom: 8px;
-}
+
 .about__link{
     @include font-style (500, 12px, 20px, 0.08em);
     text-decoration-line: underline;
     color: var(--accent-color);
+    margin-top: 10px;
+
+    @media screen and (min-width:1680px) {
+            font-size: 18px;
+        line-height: 1.56;
+        }
 }
 
