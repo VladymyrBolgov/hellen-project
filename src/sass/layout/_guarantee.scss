@@ -1,15 +1,20 @@
+.guarantee{
+    background-color: #F1F1F1;
+}
+
 .guarantee__title{
-    margin-bottom: 40px;
+    padding-bottom: 40px;
     color: var(--main-color);
+    background-color: var(--optional-color);    
     
     @include font-style (800, 26px, 34px, 0.03em);
     text-align: center; 
-    
 }
 
 .guarantee__list {
-    padding: 40px 10px 40px 10px;
-    background-color: #F1F1F1;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    
 }
 
 .guarantee__item{
@@ -18,8 +23,6 @@
     color: var(--extra-color);
     
     @include font-style (500, 12px, 20px, 0.03em);
-
-   
 
     &:not(:last-child){
         margin-bottom: 24px;
@@ -65,7 +68,12 @@
 
     .guarantee__item{
         padding-left: 25px;
+
+        &:not(:last-child) {
+             margin-bottom: 20px;
+        }
     }
+
 
 }
 
