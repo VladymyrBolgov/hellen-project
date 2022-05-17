@@ -1,10 +1,11 @@
 .problems {
     position: relative;
     background-image: linear-gradient(to bottom,
-    var(--main-color) 70%,
-    var(--optional-color) 30%);
+    var(--main-color) 78%,
+    var(--optional-color) 22%);
 
     padding-bottom: 40px;
+    z-index: -2;
 
     @media screen and (min-width: 1680px) {
         padding-bottom: 80px;
@@ -12,18 +13,21 @@
 }
 
 .problems::after {
-    content: "";
-    position: absolute;
-    display: block;
-    top: 88px;
-    right: 0;
+    @media screen and (min-width: 1680px) {
+        content: '';
+        position: absolute;
+        display: block;
+        top: 88px;
+        right: 0;
 
-    background-image: url(/images/icon-fire-problems.svg);
-    width: 446px;
-    height: 621px;
-    background-repeat: no-repeat;
-    background-size: contain;
-    opacity: 0.3;
+        background-image: url(/images/icon-fire-problems.svg);
+        width: 446px;
+        height: 621px;
+        background-repeat: no-repeat;
+        background-size: contain;
+        opacity: 0.7;
+        z-index: -1;
+    }
 }
 
 .problems__title {
@@ -58,7 +62,6 @@
 
     background-color: var(--optional-color);
     box-shadow: -5px 8px 26px rgba(0, 0, 0, 0.04);
-
     padding: 20px 32px 20px 32px;
 
 
