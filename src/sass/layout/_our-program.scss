@@ -1,10 +1,10 @@
 .program {
     background-color: var(--main-color);
     position: relative;
-    padding-bottom: 385px;
+    padding-bottom: 145px;
     background-image: linear-gradient(rgba(17, 21, 24, 0.3), rgba(17, 21, 24, 0.3)), url(/images/program/lesson-mobile.jpg);
     background-repeat: no-repeat;
-    background-position: right -10px bottom 313px;
+    background-position: right -10px bottom 50px;
 }
 .program__container {
     padding-top: 40px;
@@ -119,8 +119,9 @@
 
 @media screen and (min-width: 768px) {
     .program {
+        padding-bottom: 180px;
         background-image: linear-gradient(rgba(17, 21, 24, 0.3), rgba(17, 21, 24, 0.3)), url(/images/program/lesson-tablet.jpg);
-        background-position: right 0 bottom 275px;
+        background-position: right 0 bottom 75px;
     }
 
     .program__title {
@@ -159,8 +160,9 @@
 // desktop
 @media screen and (min-width: 1680px) {
     .program {
+        padding-bottom: 238px;
         background-image: linear-gradient(rgba(17, 21, 24, 0.3), rgba(17, 21, 24, 0.3)), url(/images/program/lesson-desktop.jpg);
-        background-position: left 0 bottom 25px;
+        background-position: left 0 bottom -130px;
     }
     .program__container {
         padding-top: 80px;
