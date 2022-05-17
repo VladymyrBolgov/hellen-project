@@ -107,4 +107,8 @@
     &:focus {
         fill: transparent;
     }
+    &.is-burger {
+        opacity: 0;
+        visibility: hidden;
+}
 }
