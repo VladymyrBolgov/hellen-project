@@ -1,4 +1,5 @@
-.review{
+
+.review {
   padding-top: 40px;
   padding-bottom: 40px;
 }
@@ -12,9 +13,9 @@
   text-align: center;
   margin-bottom: 24px;   
   font-family: Montserrat;
-  font-style: ExtraBold ;
-  font-size: 20px; 
-  line-height: 1,3 ;
+  font-style: ExtraBold;
+  font-size: 20px;
+  line-height: 1, 3;
 }
 
 .review__author-img{
@@ -23,13 +24,13 @@
   margin-bottom: 24px;
 }
 
-.review__vk{
+.review__vk {
   display: block;
   margin-bottom: 24px;
   text-align: center;
 }
 
-.review__author{
+.review__author {
   text-align: center;
   margin-top: 0;
   margin-bottom: 16px;
@@ -40,7 +41,8 @@
   color: #FF6B09;
 }
 
-.review__education{
+
+.review__education {
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 16px;
@@ -53,7 +55,7 @@
   color: #B9B9B9;
 }
 
-.review__comment{
+.review__comment {
   margin-bottom: 40px;
   text-align: center;
   font-family: Montserrat;
@@ -63,12 +65,13 @@
   color: #3D3D3D;
 }
 
-.accent{
+.accent {
   text-decoration: underline;
   color: #FF6B09;
 }
 
-.review__user-img{
+
+.review__user-img {
   display: flex;
   margin-left: auto;
   margin-right: auto;
@@ -79,29 +82,36 @@
   justify-content: center;
 }
 
-.review__img2{
+.review__img2 {
   margin-left: 22px;
 }
+
 .review__img3 {
   margin-left: 12px;
   margin-right: 12px;
 }
+
 .review__img4 {
-margin-right: 22px;
+  margin-right: 22px;
 }
 
-.review__img5  {
+.review__img5 {
   display: none;
-} 
+}
+
 .review__img6 {
   display: none;
 }
+
 .review__img7 {
   display: none;
 }
+
 .review__img8 {
   display: none;
 }
-.review__icon-tablet{
+
+.review__icon-tablet {
   display: none;
 }
+
