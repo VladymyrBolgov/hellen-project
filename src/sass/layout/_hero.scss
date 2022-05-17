@@ -24,7 +24,7 @@
 
     @media screen and (min-width: 1680px) {
         background-image: url("/images/hero-img/bg-hero-desktop.png");  
-        padding-top: 190px;
+        padding-top: 156px;
         padding-bottom: 264px;
     }
 
@@ -56,7 +56,9 @@
     &__title{
         @include font-style (800, 20px, 26px, 0.03em);
         margin-bottom: 8px;
-
+        @media screen and (max-width: 767.98px) {
+            width: 270px;
+        }
         @media screen and (min-width: 768px) {
             font-size: 26px;
         }
@@ -100,8 +102,12 @@
     }
     &__btn{
         @include font-style (700, 15px, 15px, 0.08em);
-        min-width: 280px;
-        height: 48px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 280px;
+        min-height: 48px;
+        padding: 14px 0;
         text-align: center;
         text-transform: uppercase;
         color: var(--optional-color);
@@ -116,9 +122,6 @@
             }
 
         @media screen and (max-width: 767.98px) {
-            display: flex;
-            align-items: center;
-            justify-content: center;
             margin: 0 auto;
         }
         @media screen and (min-width: 768px) {
