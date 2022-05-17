@@ -1,8 +1,8 @@
 .problems {
     position: relative;
     background-image: linear-gradient(to bottom,
-    var(--main-color) 78%,
-    var(--optional-color) 22%);
+    var(--main-color) 75%,
+    var(--optional-color) 25%);
 
     padding-bottom: 40px;
     z-index: -2;
@@ -17,7 +17,7 @@
         content: '';
         position: absolute;
         display: block;
-        top: 88px;
+        top: 80px;
         right: 0;
 
         background-image: url(/images/icon-fire-problems.svg);
