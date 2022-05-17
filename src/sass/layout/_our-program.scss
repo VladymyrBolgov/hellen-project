@@ -1,10 +1,16 @@
 .program {
     background-color: var(--main-color);
+    position: relative;
+    padding-bottom: 385px;
+    background-image: url(/images/program/lesson-mobile.jpg);
+    background-repeat: no-repeat;
+    background-position: right -10px bottom 313px;
 }
 .program__container {
     padding-top: 40px;
 }
 .program__list {
+    display: flex;
     text-align: left;
 }
 .program__title {
@@ -15,36 +21,21 @@
     color: var(--optional-color);
 }
 .program__term {
+    position: relative;
+    margin-bottom: 12px;
+
     @include font-style (700, 14px, 28px, 0.08em);
     text-transform: uppercase;
-
-    margin-bottom: 12px;
+    line-height: 10px;
+    
     color: var(--optional-color);
-}
-
-.program__subject {
-    @include font-style (700, 12px, 20px, 0.08em);
-
-    color: var(--accent-color);
-}
-
-.program__topic {
-    position: relative;
-    opacity: 0.5;
-
-    @include font-style (500, 12px, 20px, 0.08em);
-    color: var(--second-extra-color);
-}
-.program__term {
-    position: relative;
-    line-height: 0;
 }
 .program__term::before {
     content: '';
     position: absolute;
     display: block;
     left: -26px;
-    top: -6px;
+    top: -2px;
 
     height: 12px;
     width: 12px;
@@ -52,56 +43,56 @@
 
     background: var(--accent-color);
     transform: rotate(90deg);
-    }
+}
 .program__subject {
     position: relative;
-    padding-left: 18px;
     display: block;
-    }
 
+    margin-bottom: 16px;
+    padding-left: 18px;
+
+    @include font-style (700, 12px, 20px, 0.08em);
+    color: var(--accent-color);
+}
 .program__subject::before {
     content: '';
-    display: block;
     position: absolute;
-    top: 11px;
+    top: 10px;
     left: 1px;
     height: 1px;
     width: 12px;
+
     background: var(--accent-color);
 }
-// .program__subject--pseudo {
-//     display: block;
-//     color: transparent;
-// }
-.program__subject--pseudo::before {
-    content: '';
-        display: block;
-        position: absolute;
-        top: -20px;
-        left: 1px;
-        height: 1px;
-        min-width: 12px;
-        background: var(--accent-color);
-}
-.program__order--pseudo {
-    padding-top: 30px;
-}
-.program__picture {
-    position: relative;
+.program__topic {
     opacity: 0.5;
+
+    @include font-style (500, 12px, 20px, 0.08em);
+    color: var(--second-extra-color);
 }
 // mobile+tablet
-@media screen and (max-width: 1679px) {
+@media screen and (max-width: 1679.98px) {
     .program__item:not(:last-child) {
         margin-bottom: 40px;
     }
     .program__list {
         border-left: 1px solid var(--optional-color);
         padding-left: 20px;
-        line-height: 0;
+        flex-direction: column;
     }
-    .program__container {
-        padding-left: 56px;
+
+    .border-hidden::after{
+        content: '';
+        position: absolute;
+        display: block;
+        top: -16px;
+        left: -22px;
+        
+        height: 110px;
+        width: 4px;
+    
+        background-color: var(--main-color);
+        transform: rotate(180deg);
     }
 }
 // only mobile
@@ -109,30 +100,33 @@
     .program__order-list:not(:last-child) {
         margin-bottom: 20px;
     }
-    .program__picture {
-        top: -35px;
-        left: 40%;
+
+    .program__container {
+        padding-left: 56px;
     }
-    .program__list {
-        display: flex;
-        flex-direction: column;
-        }
 }
 
 @media screen and (min-width: 768px) {
+    .program {
+        background-image: url(/images/program/lesson-tablet.jpg);
+        background-position: right 0 bottom 275px;
+    }
+
     .program__title {
+        margin-bottom: 48px;
+
         @include font-style (800, 20px, 34px, 0.03em);
     }
     .program__term::before {
         left: -114px;
-        top: -6px;
+    }
+    .border-hidden::after {
+        left: -110px;
+        top: -28px;
     }
 }
 // only tablet
-@media screen and (min-width: 768px) and (max-width: 1679px) {
-    .program__title {
-        margin-bottom: 48px;
-    }
+@media screen and (min-width: 768px) and (max-width: 1679.98px) {
     .program__order {
         display: flex;
     }
@@ -149,14 +143,14 @@
     .program__order-list:not(:last-child) {
         margin-right: 32px;
     }
-    .program__picture {
-        top: -135px;
-        left: 46%;
-    }
 }
 
-
+// desktop
 @media screen and (min-width: 1680px) {
+    .program {
+        background-image: url(/images/program/lesson-desktop.jpg);
+        background-position: left 0 bottom 25px;
+    }
     .program__container {
         padding-top: 80px;
     }
@@ -167,44 +161,35 @@
 
     .program__term {
         @include font-style (700, 20px, 28px, 0.08em);
-    }
-
-    .program__subject {
-        @include font-style (700, 20px, 34px, 0.08em);
-    }
-
-    .program__topic {
-        @include font-style (500, 18px, 28px, 0.08em);
-    }
-
-    .program__list {
-        display: flex;
-        justify-content: center;
-
-        border-top: 1px solid var(--optional-color);
-        padding-top: 48px;
-    }
-
-    .program__order-list:not(:last-child) {
-        margin-right: 0px;
-    }
-
-    .program__order-list:not(:last-child) {
-        margin-right: 74px;
+        line-height: 14px;
+        margin-bottom: 28px;
     }
     .program__term::before {
         left: 0;
         top: -54px;
-        }
+    }
+    .program__subject {
+        @include font-style (700, 20px, 34px, 0.08em);
+    }
+    .program__topic {
+        @include font-style (500, 18px, 28px, 0.08em);
+    }
+    .program__list {
+        justify-content: center;
+        border-top: 1px solid var(--optional-color);
+        padding-top: 48px;
+    }
+    .program__item:not(:last-child) {
+        margin-right: 74px;
+    }
+    .program__order-list:not(:last-child) {
+        margin-bottom: 24px;
+    }
     .program__subject {
         padding-left: 30px;
     }
     .program__subject::before {
         top: 16px;
-        
         width: 20px;
-    }
-    .program__picture {
-        top: -135px;
     }
 }
