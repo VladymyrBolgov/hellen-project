@@ -6,7 +6,7 @@
     background-repeat: no-repeat;
     background-position: right -10px bottom 50px;
 }
-.program__container {
+.program {
     padding-top: 40px;
 }
 .program__list {
@@ -111,7 +111,9 @@
     .program__order-list:not(:last-child) {
         margin-bottom: 20px;
     }
-
+    .program__title {
+        text-align: center;
+    }
     .program__container {
         padding-left: 56px;
     }
@@ -139,18 +141,25 @@
 }
 // only tablet
 @media screen and (min-width: 768px) and (max-width: 1679.98px) {
+    .program__container {
+        padding-left: 88px;
+    }
+    .program {
+        padding-top: 60px;
+    }
+    .program__title {
+        margin-left: 22px;
+        }
     .program__item:not(:last-child) {
         .program__order {
             display: flex;
         }
-    }    
+    }
+    
     .program__list {
         padding-left: 108px;
     }
-    .program__container {
-        padding-left: 88px;
-        padding-top: 75px;
-    }
+
     .program__order-list {
         min-width: 140px;
     }
@@ -166,7 +175,7 @@
         background-image: linear-gradient(rgba(17, 21, 24, 0.3), rgba(17, 21, 24, 0.3)), url(/images/program/lesson-desktop.jpg);
         background-position: left 0 bottom -130px;
     }
-    .program__container {
+    .program {
         padding-top: 80px;
     }
     .program__title {
