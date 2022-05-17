@@ -2,6 +2,9 @@
     background-color: var(--main-color);
     position: relative;
     padding-bottom: 385px;
+    background-image: url(/images/program/lesson-mobile.jpg);
+    background-repeat: no-repeat;
+    background-position: right -10px bottom 313px;
 }
 .program__container {
     padding-top: 40px;
@@ -67,11 +70,6 @@
     @include font-style (500, 12px, 20px, 0.08em);
     color: var(--second-extra-color);
 }
-.program__picture {
-    position: absolute;
-    right: -10px;
-    bottom: 313px;
-}
 // mobile+tablet
 @media screen and (max-width: 1679.98px) {
     .program__item:not(:last-child) {
@@ -87,10 +85,10 @@
         content: '';
         position: absolute;
         display: block;
-        top: -12px;
+        top: -16px;
         left: -22px;
         
-        height: 100px;
+        height: 110px;
         width: 4px;
     
         background-color: var(--main-color);
@@ -109,6 +107,11 @@
 }
 
 @media screen and (min-width: 768px) {
+    .program {
+        background-image: url(/images/program/lesson-tablet.jpg);
+        background-position: right 0 bottom 275px;
+    }
+
     .program__title {
         margin-bottom: 48px;
 
@@ -119,11 +122,7 @@
     }
     .border-hidden::after {
         left: -110px;
-        top: -12px;
-    }
-    .program__picture {
-        right: 0;
-        bottom: 275px;
+        top: -28px;
     }
 }
 // only tablet
@@ -148,6 +147,10 @@
 
 // desktop
 @media screen and (min-width: 1680px) {
+    .program {
+        background-image: url(/images/program/lesson-desktop.jpg);
+        background-position: left 0 bottom 25px;
+    }
     .program__container {
         padding-top: 80px;
     }
@@ -188,9 +191,5 @@
     .program__subject::before {
         top: 16px;
         width: 20px;
-    }
-    .program__picture {
-      left: 0;
-      bottom: 25px;
     }
 }
