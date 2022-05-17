@@ -16,14 +16,16 @@
 (min-resolution: 192dpi),
 (min-resolution: 2dppx) {
     .contact {
-        background-image: url("/images/contact/bgform-mobile@2x.jpg");
+        background-image: linear-gradient(rgba(17, 21, 24, 0.8),
+                rgba(17, 21, 24, 0.8)), url("/images/contact/bgform-mobile@2x.jpg");
     }
 }
 
 
-.contact__title {
+.contact__header {
     @include font-style (800, 14px, 18.2px, 0.03em);
     color: var(--optional-color);
+    margin-bottom: 24px;
 }
 
 .contact--accent {
@@ -33,11 +35,7 @@
 .contact__description {
     @include font-style (600, 12px, 14.63px, 0.08em);
     color: var(--optional-color);
-    margin-top: 24px;
-}
-
-.contact__form {
-    margin-top: 40px;
+    margin-bottom: 40px;
 }
 
 .contact__input {
@@ -64,9 +62,14 @@
         border-color: red;
     }
 
-    &:nth-child(2) {
-        margin-top: 20px;
+    &:first-child {
+        margin-bottom: 20px;
     }
+
+    &:nth-child(2) {
+        margin-bottom: 40px;
+    }
+
 }
 
 .contact__btn {
@@ -75,19 +78,17 @@
     border: none;
     @include font-style (700, 12px, 14.63px, 0.08em);
     font-family: inherit;
-    margin-top: 40px;
     color: var(--optional-color);
     cursor: pointer;
     text-transform: uppercase;
     background-color: var(--accent-color);
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-        background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: transform 250ms linear;
 
     &:hover,
-    &:focus {
-        color: var(--main-color);
-        background-color: #e86108;
-            }
+        &:focus {
+            box-shadow: (2px 2px 4px 2px rgba(255, 107, 9, 0.25));
+            transform: scale(1.05);
+        }
 }
 
 @media screen and (min-width: 768px) {
@@ -106,35 +107,34 @@
 
     }
 
-    .contact__title {
+    .contact__header {
         @include font-style (800, 26px, 33.8px, 0.03em);
         width: 688px;
         margin-left: auto;
         margin-right: auto;
+        margin-bottom: 40px
         
     }
 
     .contact__description {
         @include font-style (600, 14px, 17.07px, 0.08em);
-        margin-top: 40px;
-              
+        margin-bottom: 24px;              
     }
-    .contact__form {
-        margin-top: 24px;
-        }
-
+  
     .contact__input {
         box-sizing: border-box;
         @include size (336px, 48px);
         padding: 15px 24px;
         margin-left: auto;
         margin-right: auto;
+        &:nth-child(2) {
+            margin-bottom: 32px;
+        }
     }
 
     .contact__btn {
         width: 335px;
-        margin-top: 32px;
-    }
+           }
 }
 
 @media screen and (min-width: 1680px) {
@@ -152,7 +152,7 @@
         }
     }
 
-    .contact__title {
+    .contact__header {
         @include font-style (800, 46px, 59.8px, 0.03em);
         width: 1090px;
         margin-left: auto;
@@ -161,28 +161,28 @@
 
     .contact__description {
         @include font-style (600, 30px, 36.57px, 0.08em);
-    }
-
-    .contact__form {
-        margin-top: 60px;
+        margin-bottom: 60px;
     }
 
     .contact__input {
         @include size (528px, 70px);
         padding: 23px 24px;
+        font-size: 20px;
 
         &::placeholder {
             @include font-style (600, 20px, 24.38px, 0.08em);
         }
+        &:first-child {
+            margin-bottom: 32px;
+        }
         &:nth-child(2) {
-            margin-top: 32px;
+            margin-bottom: 40px;
         }
     }
 
     .contact__btn {
         @include font-style (700, 14px, 17.07px, 0.14em);
         width: 528px;
-        margin-top: 40px;
         padding: 27px 0px;
     }
 }
