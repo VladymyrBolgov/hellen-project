@@ -92,7 +92,8 @@
              
          }
     .education__item {
-                     width: 298px;
+                    width: 100%;
+                        max-width: 298px;
                      height: 280px;
                     } 
     .education__text {
@@ -105,15 +106,7 @@
             margin-bottom: 20px;
         }
 }
-//0-480
-@media screen and (max-width: 480px) {
-    .education__item {
-        width: 100%;
-        max-width: 298px;
-        height: 280px;
-    }
 
-}
 //768+
 @media screen and (min-width: 768px){
     .education__title {
