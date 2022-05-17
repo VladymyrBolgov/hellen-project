@@ -1,12 +1,12 @@
 .program {
     background-color: var(--main-color);
     position: relative;
-    padding-bottom: 385px;
+    padding-bottom: 145px;
     background-image: linear-gradient(rgba(17, 21, 24, 0.3), rgba(17, 21, 24, 0.3)), url(/images/program/lesson-mobile.jpg);
     background-repeat: no-repeat;
-    background-position: right -10px bottom 313px;
+    background-position: right -10px bottom 50px;
 }
-.program__container {
+.program {
     padding-top: 40px;
 }
 .program__list {
@@ -70,7 +70,7 @@
         padding-top: 20px;
     }
     .program__subject::before {
-        top: -20px;
+     
         left: 1px;
     }
 }
@@ -95,7 +95,7 @@
         content: '';
         position: absolute;
         display: block;
-        top: -48px;
+        top: -12px;
         left: -22px;
         
         height: 110px;
@@ -111,7 +111,9 @@
     .program__order-list:not(:last-child) {
         margin-bottom: 20px;
     }
-
+    .program__title {
+        text-align: center;
+    }
     .program__container {
         padding-left: 56px;
     }
@@ -119,8 +121,9 @@
 
 @media screen and (min-width: 768px) {
     .program {
+        padding-bottom: 180px;
         background-image: linear-gradient(rgba(17, 21, 24, 0.3), rgba(17, 21, 24, 0.3)), url(/images/program/lesson-tablet.jpg);
-        background-position: right 0 bottom 275px;
+        background-position: right 0 bottom 75px;
     }
 
     .program__title {
@@ -133,21 +136,30 @@
     }
     .border-hidden::after {
         left: -110px;
-        top: -48px;
+        top: -12px;
     }
 }
 // only tablet
 @media screen and (min-width: 768px) and (max-width: 1679.98px) {
-    .program__order {
-        display: flex;
+    .program__container {
+        padding-left: 88px;
     }
+    .program {
+        padding-top: 60px;
+    }
+    .program__title {
+        margin-left: 22px;
+        }
+    .program__item:not(:last-child) {
+        .program__order {
+            display: flex;
+        }
+    }
+    
     .program__list {
         padding-left: 108px;
     }
-    .program__container {
-        padding-left: 88px;
-        padding-top: 75px;
-    }
+
     .program__order-list {
         min-width: 140px;
     }
@@ -159,10 +171,11 @@
 // desktop
 @media screen and (min-width: 1680px) {
     .program {
+        padding-bottom: 238px;
         background-image: linear-gradient(rgba(17, 21, 24, 0.3), rgba(17, 21, 24, 0.3)), url(/images/program/lesson-desktop.jpg);
-        background-position: left 0 bottom 25px;
+        background-position: left 0 bottom -130px;
     }
-    .program__container {
+    .program {
         padding-top: 80px;
     }
     .program__title {
@@ -185,7 +198,10 @@
     }
     .program__item:last-child {
         .program__subject::before {
-            top: -32px;
+            top: 12px;
+        }
+        .program__order {
+            padding-top: 45px;
         }
     }
     .program__topic {

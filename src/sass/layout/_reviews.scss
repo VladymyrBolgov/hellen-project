@@ -1,23 +1,24 @@
+
 .review {
   padding-top: 40px;
   padding-bottom: 40px;
 }
 
-.review__container {
+.review__container{
   padding-left: 40px;
   padding-right: 40px;
 }
 
-.review__title {
+.review__title{
   text-align: center;
-  margin-bottom: 24px;
+  margin-bottom: 24px;   
   font-family: Montserrat;
   font-style: ExtraBold;
   font-size: 20px;
   line-height: 1, 3;
 }
 
-.review__author-img {
+.review__author-img{
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 24px;
@@ -39,6 +40,7 @@
   line-height: 1, 21;
   color: #FF6B09;
 }
+
 
 .review__education {
   margin-left: auto;
@@ -67,6 +69,7 @@
   text-decoration: underline;
   color: #FF6B09;
 }
+
 
 .review__user-img {
   display: flex;
@@ -111,3 +114,4 @@
 .review__icon-tablet {
   display: none;
 }
+
