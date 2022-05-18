@@ -3,7 +3,7 @@
     openModalBtn: document.querySelector("[data-modal-open]"),
     closeModalBtn: document.querySelector("[data-modal-close]"),
     modal: document.querySelector("[data-modal]"),
-    mobileModalLinks: document.querySelectorAll('[mobile-modal-link]'),
+    mobileModalLinks: document.querySelectorAll('[data-mobile-modal-link]'),
 
   };
 

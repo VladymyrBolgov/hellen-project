@@ -3,7 +3,7 @@
     openMenuBtn: document.querySelector('[data-menu-open]'),
     closeMenuBtn: document.querySelector('[data-menu-close]'),
     menu: document.querySelector('[data-menu]'),
-    mobileMenuLinks: document.querySelectorAll('[mobile-menu-link]'),
+    mobileMenuLinks: document.querySelectorAll('[data-mobile-menu-link]'),
   };
 
   refs.openMenuBtn.addEventListener('click', toggleModal);
@@ -21,7 +21,7 @@
     openModalBtn: document.querySelector("[data-burger-open]"),
     closeModalBtn: document.querySelector("[data-burger-close]"),
     modal: document.querySelector("[data-burger]"),
-    mobileMenuLinks: document.querySelectorAll('[mobile-buger-link]'),
+    mobileMenuLinks: document.querySelectorAll('[data-mobile-buger-link]'),
 
   };
 
