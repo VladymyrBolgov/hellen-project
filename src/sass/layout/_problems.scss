@@ -5,9 +5,15 @@
     var(--optional-color) 25%);
 
     padding-bottom: 40px;
+    padding-top: 24px;
     z-index: -2;
 
+    @media screen and (min-wudth:768px) {
+        padding-top: 40px;
+    }
+
     @media screen and (min-width: 1680px) {
+        padding-top: 80px;
         padding-bottom: 80px;
     }
 }
@@ -34,17 +40,10 @@
     @include font-style (800, 24px, 31px, 0.03em);
     color: var(--optional-color);
     max-width: 100%;
-    padding-top: 24px;
-    padding-bottom: 24px;
-
-    @media screen and (min-width: 768px) {
-        padding-top: 40px;
-        padding-bottom: 25px;
-    }
+    margin-bottom: 24px;
 
     @media screen and (min-width: 1680px) {
-        padding-top: 80px;
-        padding-bottom: 80px;
+       margin-bottom: 80px;
         font-size: 46px;
         line-height: 1.3;
     }
