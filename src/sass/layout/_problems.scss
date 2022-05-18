@@ -81,6 +81,7 @@
     @media screen and (min-width: 1680px) {
         justify-content: space-between;
         padding-left: 140px;
+        padding-right: 140px;
         padding-top: 60px;
         padding-bottom: 60px;
     }
@@ -88,9 +89,6 @@
 
 .problems__item {
     position: relative;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
     counter-increment: number 1;
     @include font-style (700, 14px, 24px, 0.08em);
 
@@ -113,10 +111,10 @@
         }
     }
 
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: 768px) and (max-width:1679.98px) {
         width: 215px;
         &:not(:nth-child(2n)) {
-        margin-right: 44px;
+        margin-right: 60px;
         }
         
         &:not(:nth-last-child(-n+2)){ 
