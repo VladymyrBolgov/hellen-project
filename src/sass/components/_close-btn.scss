@@ -10,9 +10,10 @@
     color: var(--optional-color);
     cursor: pointer;
 
-    &:hover,
-    &:focus {
-        fill: var(--accent-color);
+
+    &:hover .close-btn__icon,
+    &:focus .close-btn__icon {
+        color: var(--accent-color);
     }
 
 }
