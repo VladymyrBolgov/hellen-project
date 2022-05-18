@@ -113,17 +113,6 @@
     }
 }
 
-.benefits__hyphen {
-    content: '';
-    display: block;
-    position: absolute;
-    top: 12px;
-    left: 0;
-    height: 2px;
-    width: 20px;
-    background: var(--accent-color);
-}
-
 .benefits__text {
     color: var(--main-color);
 }
