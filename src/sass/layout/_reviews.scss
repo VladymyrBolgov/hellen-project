@@ -1,3 +1,207 @@
+@media screen and(max-width:768px){
+  .review {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.review__title {
+  text-align: center;
+  margin-bottom: 24px;
+  font-family: Montserrat;
+  font-style: ExtraBold;
+  font-size: 20px;
+  line-height: 1, 3;
+}
+
+.review__author-img {
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 24px;
+}
+
+.review__vk {
+  display: block;
+  margin-bottom: 24px;
+  text-align: center;
+}
+
+.review__author {
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 16px;
+  font-family: Montserrat;
+  font-style: ExtraBold;
+  font-size: 14px;
+  line-height: 1, 21;
+  color: var(--accent-color);
+}
+
+.review__education {
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 16px;
+  width: 240px;
+  text-align: center;
+  font-family: Montserrat;
+  font-style: 500;
+  font-size: 12px;
+  line-height: 1, 25;
+  color: var(--second-extra-color);
+}
+
+.review__comment {
+  width: 240px;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 40px;
+  text-align: center;
+  font-family: Montserrat;
+  font-style: 500;
+  font-size: 12px;
+  line-height: 1, 67;
+  color:var(--extra-color);
+}
+
+.accent {
+  text-decoration: underline;
+  color: var(--accent-color);
+}
+
+.review__user-img {
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+
+  width: 100%;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+
+.review__img2 {
+  margin-left: 22px;
+}
+
+.review__img3 {
+  margin-left: 12px;
+  margin-right: 12px;
+}
+
+.review__img4 {
+  margin-right: 22px;
+}
+
+.review__img5 {
+  display: none;
+}
+
+.review__img6 {
+  display: none;
+}
+
+.review__img7 {
+  display: none;
+}
+
+.review__img8 {
+  display: none;
+}
+
+.review__icon-tablet {
+  display: none;
+}
+}
+
+
+@media screen and (min-width:768px) {
+  .review {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+
+  .accent {
+    text-decoration: underline;
+    color: var(--accent-color);
+  }
+
+  .review__icon-mobile {
+    display: none;
+  }
+
+  .review__author-img {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  .review__vk {
+    display: block;
+    text-align: center;
+  }
+
+  .review__user-coment {
+    display: flex;
+  }
+
+  .review__wrap-all {
+    display: flex;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    justify-content: center;
+    align-items: center;
+    box-shadow: -5px 8px 26px rgba(0, 0, 0, 0.04);
+  }
+
+  .review__wrap-text {
+    width: 412px;
+    margin-left: 44px;
+    margin-right: 19px;
+  }
+
+  .review__wrap-img {
+    margin-left: 21px;
+  }
+
+  .review__title {
+    text-align: center;
+    margin-bottom: 40px;
+    @include font-style (800, 26px, 34px, 0.03em);
+  }
+
+  .review__author {
+    text-align: start;
+    margin-top: 0;
+    margin-bottom: 20px;
+    @include font-style (800, 20px, 24px, 0.03em);
+    color: var(--accent-color);
+  }
+
+  .review__education {
+    margin-bottom: 20px;
+    text-align: start;
+    @include font-style (500, 12px, 14px, 0.03em);
+    color: var(--second-extra-color);
+  }
+
+  .review__comment {
+    width: 412px;
+    text-align: start;
+    @include font-style (500, 12px, 20px, 0.03em);
+    color: var(--extra-color);
+  }
+
+  .review__user-img {
+    display: flex;
+    margin-top: 20px;
+    justify-content: center;
+  }
+
+  .review__img:not(:last-child) {
+    margin-right: 32px;
+  }
+
+}
+
+
 @media screen and (min-width:1680px) {
   .review {
     padding-top: 80px;
@@ -6,7 +210,7 @@
 
   .accent {
     text-decoration: underline;
-    color: #FF6B09;
+    color: var(--accent-color);
   }
 
   .review__icon-mobile {
@@ -37,8 +241,11 @@
 
   .review__wrap-all {
     display: flex;
+    padding-top: 0;
+    padding-bottom: 0;
     align-items: center;
     justify-content: center;
+    box-shadow: none;
   }
 
   .review__wrap-text {
@@ -53,7 +260,6 @@
   .review__title {
     text-align: center;
     margin-bottom: 40px;
-
     @include font-style (800, 46px, 60px, 0.03em);
     }
 
@@ -61,9 +267,8 @@
     text-align: start;
     margin-top: 0;
     margin-bottom: 20px;
-
     @include font-style (800, 30px, 37px, 0.03em);
-    color: #FF6B09;
+    color:var(--accent-color);
   }
 
   .review__education {
@@ -71,14 +276,14 @@
     width: 482px;
     text-align: start;
     @include font-style (500, 14px, 17px, 0.03em);
-    color: #B9B9B9;
+    color:var(--second-extra-color);
   }
 
   .review__comment {
     text-align: start;
-
+    width: 706px;
     @include font-style (500, 18px, 28px, 0.03em);
-    color: #3D3D3D;
+    color: var(--extra-color);
   }
 
   .review__user-img {
