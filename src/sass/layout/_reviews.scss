@@ -1,7 +1,7 @@
-@media screen and (min-width:768px) {
+@media screen and (min-width:1680px) {
   .review {
-    padding-top: 40px;
-    padding-bottom: 40px;
+    padding-top: 80px;
+    padding-bottom: 80px;
   }
 
   .review__container {
@@ -20,7 +20,7 @@
 
   .review__author-img {
     text-align: center;
-    margin-bottom: 20px;
+    margin-bottom: 8px;
   }
 
   .review__vk {
@@ -30,20 +30,25 @@
 
   .review__user-coment {
     display: flex;
+    width: 1088px;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    padding-left: 81px;
+    padding-right: 111px;
+    margin-left: 32px;
+    margin-right: 32px;
+    box-shadow: -5px 8px 26px rgba(0, 0, 0, 0.04);
   }
 
   .review__wrap-all {
     display: flex;
-    padding-top: 40px;
-    padding-bottom: 40px;
     align-items: center;
-    box-shadow: -5px 8px 26px rgba(0, 0, 0, 0.04);
+    justify-content: center;
   }
 
   .review__wrap-text {
-    width: 412px;
-    margin-left: 44px;
-    margin-right: 19px;
+    width: 706px;
+    margin-left: 40px;
   }
 
   .review__wrap-img {
@@ -55,7 +60,7 @@
     margin-bottom: 40px;
     font-family: Montserrat;
     font-style: ExtraBold;
-    font-size: 26px;
+    font-size: 46px;
     line-height: 1, 31;
   }
 
@@ -65,35 +70,34 @@
     margin-bottom: 20px;
     font-family: Montserrat;
     font-style: ExtraBold;
-    font-size: 20px;
+    font-size: 30px;
     line-height: 1, 21;
     color: #FF6B09;
   }
 
   .review__education {
     margin-bottom: 20px;
+    width: 482px;
     text-align: start;
     font-family: Montserrat;
     font-style: 500;
-    font-size: 12px;
+    font-size: 14px;
     line-height: 1, 25;
     color: #B9B9B9;
   }
 
   .review__comment {
-
-    width: 412px;
     text-align: start;
     font-family: Montserrat;
     font-style: 500;
-    font-size: 12px;
-    line-height: 1, 67;
+    font-size: 18px;
+    line-height: 1, 55;
     color: #3D3D3D;
   }
 
   .review__user-img {
     display: flex;
-    margin-top: 20px;
+    margin-top: 40px;
     justify-content: center;
   }
 
