@@ -15,9 +15,7 @@
 }
 .program__title {
     margin-bottom: 40px;
-
     @include font-style (800, 20px, 26px, 0.03em);
-    
     color: var(--optional-color);
 }
 .program__term {
@@ -126,8 +124,7 @@
         background-position: right 0 bottom 75px;
     }
 
-    .program__title {
-        margin-bottom: 48px;
+    .program__title  {
 
         @include font-style (800, 20px, 34px, 0.03em);
     }
