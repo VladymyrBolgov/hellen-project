@@ -21,10 +21,13 @@
     openModalBtn: document.querySelector("[data-burger-open]"),
     closeModalBtn: document.querySelector("[data-burger-close]"),
     modal: document.querySelector("[data-burger]"),
+    mobileMenuLinks: document.querySelectorAll('[mobile-buger-link]'),
+
   };
 
   refs.openModalBtn.addEventListener("click", toggleModal);
   refs.closeModalBtn.addEventListener("click", toggleModal);
+  refs.mobileMenuLinks.forEach(elem => elem.addEventListener('click', toggleModal));
 
   function toggleModal() {
     refs.modal.classList.toggle("is-burger");
