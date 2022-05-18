@@ -107,4 +107,13 @@
     &:focus {
         fill: transparent;
     }
+    &.is-burger {
+        opacity: 0;
+        visibility: hidden;
+       
+    }
+    &:hover,
+    &:focus {
+        fill: var(--accent-color);
+    }
 }

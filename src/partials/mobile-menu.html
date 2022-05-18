@@ -4,7 +4,7 @@
       <use href="/images/sprite.svg#icon-logo-white"></use>
     </svg>
   </a>
-  <button type="button" class="close-btn" data-menu-close>
+  <button type="button" class="close-btn" data-burger-close data-menu-close>
     <svg class="close-btn__icon">
       <use href="/images/sprite.svg#icon-closebtnmenu"></use>
     </svg>
@@ -12,19 +12,32 @@
 
   <ul class="mobile-menu__list">
     <li class="mobile-menu__item">
-      <a href="#program" class="mobile-menu__link" mobile-menu-link>Studying program</a>
+      <a href="#program" class="mobile-menu__link" mobile-menu-link mobile-buger-link
+        >Studying program</a
+      >
     </li>
     <li class="mobile-menu__item">
-      <a href="#about" class="mobile-menu__link" mobile-menu-link>About</a>
+      <a href="#about" class="mobile-menu__link" mobile-menu-link mobile-buger-link>About</a>
     </li>
     <li class="mobile-menu__item">
-      <a href="#guarantee" class="mobile-menu__link" mobile-menu-link>Training options</a>
+      <a href="#guarantee" class="mobile-menu__link" mobile-menu-link mobile-buger-link
+        >Training options</a
+      >
     </li>
     <li class="mobile-menu__item">
-      <a href="#connection" class="mobile-menu__link" mobile-menu-link>Contacts</a>
+      <a href="#connection" class="mobile-menu__link" mobile-menu-link mobile-buger-link
+        >Contacts</a
+      >
     </li>
   </ul>
-  <button type="button" class="mobile-menu__button" data-modal-open mobile-menu-link>
+  <button
+    type="button"
+    class="mobile-menu__button"
+    data-modal-open
+    mobile-modal-link
+    mobile-menu-link
+    mobile-buger-link
+  >
     Consultation by phone
   </button>
 </div>
