@@ -1,12 +1,12 @@
 .problems {
-    position: relative;
+    
     background-image: linear-gradient(to bottom,
     var(--main-color) 75%,
     var(--optional-color) 25%);
 
     padding-bottom: 40px;
     padding-top: 24px;
-    z-index: -2;
+   
 
     @media screen and (min-wudth:768px) {
         padding-top: 40px;
@@ -17,14 +17,18 @@
         padding-bottom: 80px;
     }
 }
+.problems__container {
+position: relative;
+z-index: 1;
+}
 
-.problems::after {
+.problems__container::after {
     @media screen and (min-width: 1680px) {
         content: '';
         position: absolute;
         display: block;
         top: 80px;
-        right: 0;
+        right: 15px;
 
         background-image: url(/images/icon-fire-problems.svg);
         width: 446px;
