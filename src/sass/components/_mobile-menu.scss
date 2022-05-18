@@ -22,38 +22,6 @@
     pointer-events: auto;
 }
 
-.mobile-menu__logo {
-    display: block;
-    position: absolute;
-    top: 20px;
-    left: 20px;
-}
-
-
-.mobile-menu__close-btn {
-    position: absolute;
-    display: block;
-    top: 20px;
-    right: 20px;
-    background-color: transparent;
-    border: none;
-    padding: 4px;
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    color: var(--main-color);
-
-    &:hover,
-    &:focus {
-        fill: var(--accent-color);
-    }
-
-}
-
-.mobile-menu__icon {
-    @include size (16px, 16px);
-    fill: red;
-}
-
-
 .mobile-menu__list {
     margin-bottom: 40px;
     padding-top: 90px;

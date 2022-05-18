@@ -38,6 +38,9 @@
     color: var(--optional-color);
     margin-bottom: 29px;
 }
+.modal--accent {
+    color: var(--accent-color);
+}
 
 .modal__input {
     display: block;
@@ -61,7 +64,7 @@
     }
 
     &:not(:placeholder-shown):required:invalid {
-        border-color: red;
+        border-color: #FF0000;
     }
 
     &:first-child {

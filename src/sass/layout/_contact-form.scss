@@ -61,7 +61,7 @@
     }
 
     &:not(:placeholder-shown):required:invalid {
-        border-color: red;
+        border-color: #FF0000;
     }
 
     &:first-child {
