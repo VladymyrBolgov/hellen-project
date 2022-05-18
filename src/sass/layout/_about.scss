@@ -90,9 +90,25 @@
 }
 
 .about__item {
+    align-items: center;
     display: flex;
+
     &:not(:last-child){
         margin-bottom: 20px;
+    }
+    &::before{
+        content: '';
+        display: block;
+        width: 17px;
+        height: 14px;
+        background-image: url(/images/icon-markteacher.svg);
+        background-repeat: no-repeat;
+        background-size: contain;
+        margin-right: 10px;
+  
+        @media screen and (min-width: 1680px) {
+            margin-right: 34px;
+        }
     }
 }
 
@@ -139,7 +155,6 @@
     @include font-style (500, 12px, 20px, 0.08em);
     text-decoration-line: underline;
     color: var(--accent-color);
-    margin-top: 10px;
 
     @media screen and (min-width:1680px) {
         font-size: 18px;
