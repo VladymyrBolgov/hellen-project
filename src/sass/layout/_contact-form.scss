@@ -1,28 +1,25 @@
 .contact { 
     align-items: center;
     text-align: center;
-}
 
-.contact__container {
     background-color: rgba(17, 21, 24, 1);
         background-image: linear-gradient(rgba(17, 21, 24, 0.8),
                 rgba(17, 21, 24, 0.8)), url("/images/contact/bgform-mobile.jpg");
         background-repeat: no-repeat;
         background-size: cover;
-        background-position: center;
+        background-position: 100%;
         padding-top: 40px;
         padding-bottom: 40px;
 
 @media (min-device-pixel-ratio: 2),
 (min-resolution: 192dpi),
 (min-resolution: 2dppx) {
-    .contact__container {
+    .contact {
         background-image: linear-gradient(rgba(17, 21, 24, 0.8),
                 rgba(17, 21, 24, 0.8)), url("/images/contact/bgform-mobile@2x.jpg");
     }
 }
 }
-
 .contact__header {
     @include font-style (800, 14px, 18.2px, 0.03em);
     color: var(--optional-color);
@@ -95,14 +92,14 @@
 }
 
 @media screen and (min-width: 321px) {
-    .contact__container {
+    .contact {
         background-image: linear-gradient(rgba(17, 21, 24, 0.8),
                 rgba(17, 21, 24, 0.8)), url("/images/contact/bgform-tablet.jpg");
         
         @media (min-device-pixel-ratio: 2),
         (min-resolution: 192dpi),
         (min-resolution: 2dppx) {
-            .contact__container {
+            .contact {
                 background-image: linear-gradient(rgba(17, 21, 24, 0.8),
                         rgba(17, 21, 24, 0.8)), url("/images/contact/bgform-tablet@2x.jpg");
             }
@@ -140,7 +137,7 @@
 }
 
 @media screen and (min-width: 769px) {
-    .contact__container {
+    .contact {
         background-image: linear-gradient(rgba(17, 21, 24, 0.8),
                 rgba(17, 21, 24, 0.8)), url("/images/contact/bgform-desktop.jpg");
         padding: 80px 0px;
@@ -148,7 +145,7 @@
         @media (min-device-pixel-ratio: 2),
         (min-resolution: 192dpi),
         (min-resolution: 2dppx) {
-            .contact__container {
+            .contact {
                 background-image: url("/images/contact/bgform-desktop@2x.jpg");
             }
         }

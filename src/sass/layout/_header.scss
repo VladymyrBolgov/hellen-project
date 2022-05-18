@@ -91,7 +91,7 @@
 }
 
 .burger {
-    height: 48px;
+    height: 29px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -99,6 +99,9 @@
     background-color: transparent;
     &__icon{
         @include size (21px, 14px);
+    }
+    @media screen and (min-width: 768px) {
+        height: 48px;
     }
 
     @media screen and (min-width: 1680px) {
