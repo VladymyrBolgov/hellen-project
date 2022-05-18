@@ -128,7 +128,7 @@
          
 }
     .education__item{
-        
+        padding-top: 40px;
             margin-left: 30px;
             margin-top: 30px;
             flex-basis: calc((100% - 60px) / 2);
@@ -152,9 +152,12 @@
 
 //1680+
 @media screen and (min-width: 1680px){
+    .education {
+            padding-bottom: 80px;
+        }
     .education__title {
             @include font-style (800, 46px, 60px, 0.03em);
-            margin-bottom: 40px;
+            margin-bottom: 80px;
             text-align: start;
         }
          .education__text {
