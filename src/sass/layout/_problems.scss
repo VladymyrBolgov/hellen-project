@@ -57,20 +57,30 @@
     display: flex;
     flex-wrap: wrap;
     counter-reset: number 0;
+    width: 88%;
+    margin-right: auto;
+    margin-left: auto;
 
     background-color: var(--optional-color);
     box-shadow: -5px 8px 26px rgba(0, 0, 0, 0.04);
-    padding: 20px 32px 20px 32px;
+
+    @media screen and (max-width: 767.98px) {
+            flex-direction: column;
+            max-width: 425px;
+            padding: 20px;
+        }
 
 
-    @media screen and (min-width: 768px) and (max-width: 1679.98px) {
+    @media screen and (min-width: 768px) {
         justify-content: center;
+        padding-left: 80px;
         padding-top: 32px;
         padding-bottom: 32px;
     }
 
     @media screen and (min-width: 1680px) {
-        justify-content: center;
+        justify-content: space-between;
+        padding-left: 140px;
         padding-top: 60px;
         padding-bottom: 60px;
     }
@@ -78,12 +88,14 @@
 
 .problems__item {
     position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
     counter-increment: number 1;
     @include font-style (700, 14px, 24px, 0.08em);
 
     &::before {
-        content: "0" counter(number);
-        padding-left: 30px;
+        content: "— 0" counter(number);
         color: var(--accent-color);
         
         @media screen and (max-width: 1679.98px) {
