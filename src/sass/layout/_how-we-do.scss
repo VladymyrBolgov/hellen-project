@@ -31,7 +31,7 @@
     margin-left: auto;
     margin-right: auto;
     padding-top: 30px;
-    padding-bottom: 30px;
+    padding-bottom: 40px;
     padding-left: 15px;
     padding-right: 15px;
     box-sizing: border-box;
@@ -93,16 +93,14 @@
          }
     .education__item {
                     width: 100%;
-                        max-width: 298px;
-                     height: 280px;
+                    max-width: 280px;
+                     
                     } 
     .education__text {
                     padding-bottom: 18px;
                     margin-bottom: 18px;
           }
         .education__icon-box {
-            /*width: 298px;
-            height: 80px;*/
             margin-bottom: 20px;
         }
 }
@@ -128,18 +126,17 @@
          
 }
     .education__item{
+        width: 336px;
+        padding-left: 20px;
+        padding-right: 20px;
         padding-top: 40px;
-            margin-left: 30px;
-            margin-top: 30px;
-            flex-basis: calc((100% - 60px) / 2);
+        padding-bottom: 60px;
+         margin-left: 30px;
+         margin-top: 30px;
+        flex-basis: calc((100% - 60px) / 2);
 }
-        .education__item {
-            width: 336px;
-            height: 336px;
-                }
+        
         .education__icon-box {
-            /*width: 336px;
-            height: 90px;*/
             margin-bottom: 30px;
 }
         .education__text {
@@ -176,21 +173,17 @@
                 }
         
                 .education__item {
+                    width: 528px;
                     padding-left: 80px;
                     padding-right: 80px;
                     padding-top: 90px;
+                    padding-bottom: 90px;
                     margin-left: 30px;
                     margin-top: 30px;
                     flex-basis: calc((100% - 90px) / 3);
                 }
-                .education__item {
-                    width: 528px;
-                    height: 492px;
-    
-                }
+                
                   .education__icon-box {
-                      /*width: 528px;
-                      height: 140px;*/
                       margin-bottom: 30px;
                   }
 
