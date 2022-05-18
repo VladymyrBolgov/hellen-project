@@ -4,11 +4,6 @@
     padding-bottom: 80px;
   }
 
-  .review__container {
-    padding-left: 40px;
-    padding-right: 40px;
-  }
-
   .accent {
     text-decoration: underline;
     color: #FF6B09;
@@ -58,20 +53,16 @@
   .review__title {
     text-align: center;
     margin-bottom: 40px;
-    font-family: Montserrat;
-    font-style: ExtraBold;
-    font-size: 46px;
-    line-height: 1, 31;
-  }
+
+    @include font-style (800, 46px, 60px, 0.03em);
+    }
 
   .review__author {
     text-align: start;
     margin-top: 0;
     margin-bottom: 20px;
-    font-family: Montserrat;
-    font-style: ExtraBold;
-    font-size: 30px;
-    line-height: 1, 21;
+
+    @include font-style (800, 30px, 37px, 0.03em);
     color: #FF6B09;
   }
 
@@ -79,19 +70,14 @@
     margin-bottom: 20px;
     width: 482px;
     text-align: start;
-    font-family: Montserrat;
-    font-style: 500;
-    font-size: 14px;
-    line-height: 1, 25;
+    @include font-style (500, 14px, 17px, 0.03em);
     color: #B9B9B9;
   }
 
   .review__comment {
     text-align: start;
-    font-family: Montserrat;
-    font-style: 500;
-    font-size: 18px;
-    line-height: 1, 55;
+
+    @include font-style (500, 18px, 28px, 0.03em);
     color: #3D3D3D;
   }
 
