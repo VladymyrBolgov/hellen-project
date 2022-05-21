@@ -24,7 +24,7 @@
 
     @media screen and (min-width: 1680px) {
         background-image: url("/images/hero-img/bg-hero-desktop.png");  
-        padding-top: 156px;
+        padding-top: 190px;
         padding-bottom: 264px;
     }
 
@@ -136,17 +136,14 @@
         }
     }
 
-
         @keyframes scaleCircle {
             from {
-                    transform: scale(0.2);            }
-                to {
-                    transform: scale(1);
-                }
+                transform: scale(0.2);
             }
-
-
-
+            to {
+                transform: scale(1);
+            }
+        }
     &__img{
         animation: imgScale 1200ms forwards;
         background-position: 66% 34%;
@@ -168,7 +165,6 @@
 
         @media screen and (min-width: 768px) {
             background-image: url("/images/hero-img/img-hero-tablet2.png"), url("/images/hero-img/img-hero-tablet1.png");
-
             position: absolute;
             right: 15px;
             @include size (376px, 321px);
@@ -183,8 +179,8 @@
 
         @media screen and (min-width: 1680px) {
             background-image: url("/images/hero-img/img-hero-desktop2.png"), url("/images/hero-img/img-hero-desktop1.png");
-            top: -37px;
             @include size (842px, 718px);
+            top: -40px;
 
             @media (min-device-pixel-ratio: 2),
                 (min-resolution: 192dpi),
@@ -195,29 +191,16 @@
         }
     }
 }
+@keyframes imgScale {
+    from {
+        opacity: 0.1;
+        transform: scale(0);
+    }
 
-// Animation 1 version
-        // @keyframes heroMove {
-        //     from {
-        //         opacity: 0.1;
-        //         transform: translateY(-100%);
-        //     }
-
-        //     to {
-        //         opacity: 1;
-        //         transform: translateY(0);
-        //     }
-        // }
-        @keyframes imgScale {
-            from {
-                opacity: 0.1;
-                transform: scale(0);
-            }
-
-            to {
-                transform: scale(1);
-                opacity: 1;
-            }
-        }
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
 
 
