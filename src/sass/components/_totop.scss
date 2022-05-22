@@ -1,0 +1,42 @@
+.back_to_top {
+    position: fixed;
+    bottom: 50%;
+    right: 30px;
+    z-index: 9999;
+    width: 54px;
+    height: 54px;
+    text-align: center;
+    line-height: 30px;
+    background-color: transparent;
+    border: 3px solid var(--accent-color);
+    cursor: pointer;
+    border-radius: 50%;
+    display: none;
+}
+
+.back_to_top::before,
+.back_to_top::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.back_to_top::before {
+    @include size (5px, 25px);
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+    background-color: var(--accent-color);
+}
+
+.back_to_top::after {
+    @include size (15px, 15px);
+    transform: translate(-50%, -50%) rotate(45deg);
+    border-top: 5px solid var(--accent-color);
+    border-left: 5px solid var(--accent-color);
+}
+
+.back_to_top-show {
+    display: block;
+}
