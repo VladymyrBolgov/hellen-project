@@ -1,13 +1,13 @@
 <section class="review">
-  <div class="container review__container">
+  <div class="container">
     <h2 class="review__title">Feedback from graduates</h2>
-    <div class="review__wrap-all">
+    <div class="review__wrapper">
       <a class="review__icon-tablet" href="#">
         <svg width="30" height="30">
           <use href="/images/sprite.svg#icon-arrowleft"></use>
         </svg>
       </a>
-      <article class="review__user-coment">
+      <article class="review__article">
         <div class="review__wrap-img">
           <picture>
             <source
@@ -69,7 +69,7 @@
             </svg>
           </a>
         </div>
-        <div class="review__wrap-text">
+        <div class="review__discription">
           <h4 class="review__author">Tonya Kucherovskaya</h4>
           <p class="review__education">
             Graduated from 2015, National University of Bioresources and natural history of Ukraine
@@ -78,9 +78,9 @@
             In a short time with Elena, I mastered grammar and replenished my completely empty
             vocabulary. From the first lesson I realized that I was on my plate. Elena and I became
             friends because she was really worried about my success. She became an authority for me,
-            but I did not tremble in class, fearing to make <span id="dots">...</span><span id="more">the slightest mistake. Now I can brag
+            but I did not tremble in class, fearing to <span class="review__dots">...</span><span class="review__more">make the slightest mistake. Now I can brag
             that I'm student of National Technical University in Oklachoma City.</span>
-            <button class="review__btn" onclick="myFunction()" id="myBtn">Read more</button>
+            <button class="review__btn">Read more</button>
           </p>
         </div>
       </article>
@@ -90,354 +90,196 @@
         </svg>
       </a>
     </div>
-
-    <ul class="review__user-img">
-      <li>
-        <a class="review__icon-mobile" href="#">
-          <svg width="30" height="30">
-            <use href="/images/sprite.svg#icon-arrowleft"></use>
-          </svg>
-        </a>
-      </li>
-      <li class="review__img">
-        <picture>
-          <source
-            srcset="
+    <div class="review__box">
+<a class="review__pre" href="#">
+  <svg width="30" height="30">
+    <use href="/images/sprite.svg#icon-arrowleft"></use>
+  </svg>
+</a>
+<ul class="review__list">
+  <li class="review__item review__item--one">
+    <picture>
+      <source srcset="
               /images/review-img/desktop-review2-img.webp    1x,
               /images/review-img/desktop-review2-img@2x.webp 2x
-            "
-            media="(min-width:1680px)"
-            type="image/webp"
-          />
-          <source
-            srcset="
+            " media="(min-width:1680px)" type="image/webp" />
+      <source srcset="
               /images/review-img/desktop-review2-img.png    1x,
               /images/review-img/desktop-review2-img@2x.png 2x
-            "
-            media="(min-width:1680px)"
-          />
-          <source
-            srcset="
+            " media="(min-width:1680px)" />
+      <source srcset="
               /images/review-img/desktop-review2-img.webp    1x,
               /images/review-img/desktop-review2-img@2x.webp 2x
-            "
-            media="(min-width:768px)"
-            type="image/webp"
-          />
-          <source
-            srcset="
+            " media="(min-width:768px)" type="image/webp" />
+      <source srcset="
               /images/review-img/desktop-review2-img.png    1x,
               /images/review-img/desktop-review2-img@2x.png 2x
-            "
-            media="(min-width:768px)"
-          />
-          <source
-            srcset="
+            " media="(min-width:768px)" />
+      <source srcset="
               /images/review-img/mobile-review2-img.webp    1x,
               /images/review-img/mobile-review2-img@2x.webp 2x
-            "
-            media="(max-width:767.98px)"
-            type="image/webp"
-          />
-          <source
-            srcset="
+            " media="(max-width:767.98px)" type="image/webp" />
+      <source srcset="
               /images/review-img/mobile-review2-img.png    1x,
               /images/review-img/mobile-review2-img@2x.png 2x
-            "
-            media="(max-width:767.98px)"
-          />
-          <img
-            class="review__img2"
-            src="/images/review-img/desktop-review2-img.png"
-            width="54"
-            height="54"
-            alt="User"
-          />
-        </picture>
-      </li>
-      <li class="review__img">
-        <picture>
-          <source
-            srcset="
+            " media="(max-width:767.98px)" />
+      <img class="review__img" src="/images/review-img/desktop-review2-img.png" width="54" height="54" alt="User" />
+    </picture>
+  </li>
+  <li class="review__item review__item--two">
+    <picture>
+      <source srcset="
               /images/review-img/desktop-review3-img.webp    1x,
               /images/review-img/desktop-review3-img@2x.webp 2x
-            "
-            media="(min-width:1680px)"
-            type="image/webp"
-          />
-          <source
-            srcset="
+            " media="(min-width:1680px)" type="image/webp" />
+      <source srcset="
               /images/review-img/desktop-review3-img.png    1x,
               /images/review-img/desktop-review3-img@2x.png 2x
-            "
-            media="(min-width:1680px)"
-          />
-          <source
-            srcset="
+            " media="(min-width:1680px)" />
+      <source srcset="
               /images/review-img/desktop-review3-img.webp    1x,
               /images/review-img/desktop-review3-img@2x.webp 2x
-            "
-            media="(min-width:768px)"
-            type="image/webp"
-          />
-          <source
-            srcset="
+            " media="(min-width:768px)" type="image/webp" />
+      <source srcset="
               /images/review-img/desktop-review3-img.png    1x,
               /images/review-img/desktop-review3-img@2x.png 2x
-            "
-            media="(min-width:768px)"
-          />
-          <source
-            srcset="
+            " media="(min-width:768px)" />
+      <source srcset="
               /images/review-img/mobile-review3-img.webp    1x,
               /images/review-img/mobile-review3-img@2x.webp 2x
-            "
-            media="(max-width:767.98px)"
-            type="image/webp"
-          />
-          <source
-            srcset="
+            " media="(max-width:767.98px)" type="image/webp" />
+      <source srcset="
               /images/review-img/mobile-review3-img.png    1x,
               /images/review-img/mobile-review3-img@2x.png 2x
-            "
-            media="(max-width:767.98px)"
-          />
-          <img
-            class="review__img review__img3"
-            src="/images/review-img/desktop-review3-img.png"
-            width="54"
-            height="54"
-            alt="User"
-          />
-        </picture>
-      </li>
-      <li class="review__img">
-        <picture>
-          <source
-            srcset="
+            " media="(max-width:767.98px)" />
+      <img class="review__img" src="/images/review-img/desktop-review3-img.png" width="54" height="54"
+        alt="User" />
+    </picture>
+  </li>
+  <li class="review__item review__item--three">
+    <picture>
+      <source srcset="
               /images/review-img/desktop-review4-img.webp    1x,
               /images/review-img/desktop-review4-img@2x.webp 2x
-            "
-            media="(min-width:1680px)"
-            type="image/webp"
-          />
-          <source
-            srcset="
+            " media="(min-width:1680px)" type="image/webp" />
+      <source srcset="
               /images/review-img/desktop-review4-img.png    1x,
               /images/review-img/desktop-review4-img@2x.png 2x
-            "
-            media="(min-width:1680px)"
-          />
-          <source
-            srcset="
+            " media="(min-width:1680px)" />
+      <source srcset="
               /images/review-img/desktop-review4-img.webp    1x,
               /images/review-img/desktop-review4-img@2x.webp 2x
-            "
-            media="(min-width:768px)"
-            type="image/webp"
-          />
-          <source
-            srcset="
+            " media="(min-width:768px)" type="image/webp" />
+      <source srcset="
               /images/review-img/desktop-review4-img.png    1x,
               /images/review-img/desktop-review4-img@2x.png 2x
-            "
-            media="(min-width:768px)"
-          />
-          <source
-            srcset="
+            " media="(min-width:768px)" />
+      <source srcset="
               /images/review-img/mobile-review4-img.webp    1x,
               /images/review-img/mobile-review4-img@2x.webp 2x
-            "
-            media="(max-width:767.98px)"
-            type="image/webp"
-          />
-          <source
-            srcset="
+            " media="(max-width:767.98px)" type="image/webp" />
+      <source srcset="
               /images/review-img/mobile-review4-img.png    1x,
               /images/review-img/mobile-review4-img@2x.png 2x
-            "
-            media="(max-width:767.98px)"
-          />
-          <img
-            class="review__img review__img4"
-            src="/images/review-img/desktop-review4-img.png"
-            width="54"
-            height="54"
-            alt="User"
-          />
-        </picture>
-      </li>
-      <li>
-        <a class="review__icon-mobile" href="#">
-          <svg width="30" height="30">
-            <use href="/images/sprite.svg#icon-arrowright"></use>
-          </svg>
-        </a>
-      </li>
-      <li class="review__img">
-        <picture>
-          <source
-            srcset="
+            " media="(max-width:767.98px)" />
+      <img class="review__img" src="/images/review-img/desktop-review4-img.png" width="54" height="54"
+        alt="User" />
+    </picture>
+  </li>
+  <li class="review__item review__item--four">
+    <picture>
+      <source srcset="
               /images/review-img/desktop-review5-img.webp    1x,
               /images/review-img/desktop-review5-img@2x.webp 2x
-            "
-            media="(min-width:1680px)"
-            type="image/webp"
-          />
-          <source
-            srcset="
+            " media="(min-width:1680px)" type="image/webp" />
+      <source srcset="
               /images/review-img/desktop-review5-img.png    1x,
               /images/review-img/desktop-review5-img@2x.png 2x
-            "
-            media="(min-width:1680px)"
-          />
-          <source
-            srcset="
+            " media="(min-width:1680px)" />
+      <source srcset="
               /images/review-img/desktop-review5-img.webp    1x,
               /images/review-img/desktop-review5-img@2x.webp 2x
-            "
-            media="(min-width:768px)"
-            type="image/webp"
-          />
-          <source
-            srcset="
+            " media="(min-width:768px)" type="image/webp" />
+      <source srcset="
               /images/review-img/desktop-review5-img.png    1x,
               /images/review-img/desktop-review5-img@2x.png 2x
-            "
-            media="(min-width:768px)"
-          />
-          <img
-            class="review__img review__img5"
-            src="/images/review-img/desktop-review5-img.png"
-            width="54"
-            height="54"
-            alt="User"
-          />
-        </picture>
-      </li>
-      <li class="review__img">
-        <picture>
-          <source
-            srcset="
+            " media="(min-width:768px)" />
+      <img class="review__img" src="/images/review-img/desktop-review5-img.png" width="54" height="54"
+        alt="User" />
+    </picture>
+  </li>
+  <li class="review__item review__item--five">
+    <picture>
+      <source srcset="
               /images/review-img/desktop-review6-img.webp    1x,
               /images/review-img/desktop-review6-img@2x.webp 2x
-            "
-            media="(min-width:1680px)"
-            type="image/webp"
-          />
-          <source
-            srcset="
+            " media="(min-width:1680px)" type="image/webp" />
+      <source srcset="
               /images/review-img/desktop-review6-img.png    1x,
               /images/review-img/desktop-review6-img@2x.png 2x
-            "
-            media="(min-width:1680px)"
-          />
-          <source
-            srcset="
+            " media="(min-width:1680px)" />
+      <source srcset="
               /images/review-img/desktop-review6-img.webp    1x,
               /images/review-img/desktop-review6-img@2x.webp 2x
-            "
-            media="(min-width:768px)"
-            type="image/webp"
-          />
-          <source
-            srcset="
+            " media="(min-width:768px)" type="image/webp" />
+      <source srcset="
               /images/review-img/desktop-review6-img.png    1x,
               /images/review-img/desktop-review6-img@2x.png 2x
-            "
-            media="(min-width:768px)"
-          />
-          <img
-            class="review__img review__img6"
-            src="/images/review-img/desktop-review6-img.png"
-            width="54"
-            height="54"
-            alt="User"
-          />
-        </picture>
-      </li>
-      <li class="review__img">
-        <picture>
-          <source
-            srcset="
+            " media="(min-width:768px)" />
+      <img class="review__img" src="/images/review-img/desktop-review6-img.png" width="54" height="54"
+        alt="User" />
+    </picture>
+  </li>
+  <li class="review__item review__item--six">
+    <picture>
+      <source srcset="
               /images/review-img/desktop-review7-img.webp    1x,
               /images/review-img/desktop-review7-img@2x.webp 2x
-            "
-            media="(min-width:1680px)"
-            type="image/webp"
-          />
-          <source
-            srcset="
+            " media="(min-width:1680px)" type="image/webp" />
+      <source srcset="
               /images/review-img/desktop-review7-img.png    1x,
               /images/review-img/desktop-review7-img@2x.png 2x
-            "
-            media="(min-width:1680px)"
-          />
-          <source
-            srcset="
+            " media="(min-width:1680px)" />
+      <source srcset="
               /images/review-img/desktop-review7-img.webp    1x,
               /images/review-img/desktop-review7-img@2x.webp 2x
-            "
-            media="(min-width:768px)"
-            type="image/webp"
-          />
-          <source
-            srcset="
+            " media="(min-width:768px)" type="image/webp" />
+      <source srcset="
               /images/review-img/desktop-review7-img.png    1x,
               /images/review-img/desktop-review7-img@2x.png 2x
-            "
-            media="(min-width:768px)"
-          />
-          <img
-            class="review__img review__img7"
-            src="/images/review-img/desktop-review7-img.png"
-            width="54"
-            height="54"
-            alt="User"
-          />
-        </picture>
-      </li>
-      <li class="review__img">
-        <picture>
-          <source
-            srcset="
+            " media="(min-width:768px)" />
+      <img class="review__img" src="/images/review-img/desktop-review7-img.png" width="54"
+        height="54" alt="User" />
+    </picture>
+  </li>
+  <li class="review__item review__item--seven">
+    <picture>
+      <source srcset="
               /images/review-img/desktop-review8-img.webp    1x,
               /images/review-img/desktop-review8-img@2x.webp 2x
-            "
-            media="(min-width:1680px)"
-            type="image/webp"
-          />
-          <source
-            srcset="
+            " media="(min-width:1680px)" type="image/webp" />
+      <source srcset="
               /images/review-img/desktop-review8-img.png    1x,
               /images/review-img/desktop-review8-img@2x.png 2x
-            "
-            media="(min-width:1680px)"
-          />
-          <source
-            srcset="
+            " media="(min-width:1680px)" />
+      <source srcset="
               /images/review-img/desktop-review8-img.webp    1x,
               /images/review-img/desktop-review8-img@2x.webp 2x
-            "
-            media="(min-width:768px)"
-            type="image/webp"
-          />
-          <source
-            srcset="
+            " media="(min-width:768px)" type="image/webp" />
+      <source srcset="
               /images/review-img/desktop-review8-img.png    1x,
               /images/review-img/desktop-review8-img@2x.png 2x
-            "
-            media="(min-width:768px)"
-          />
-          <img
-            class="review__img review__img8"
-            src="/images/review-img/desktop-review8-img.png"
-            width="54"
-            height="54"
-            alt="User"
-          />
-        </picture>
-      </li>
-    </ul>
+            " media="(min-width:768px)" />
+      <img class="review__img" src="/images/review-img/desktop-review8-img.png" width="54"
+        height="54" alt="User" />
+    </picture>
+  </li>
+</ul>
+<a class="review__next" href="#">
+  <svg width="30" height="30">
+    <use href="/images/sprite.svg#icon-arrowright"></use>
+  </svg>
+</a>
+    </div>
   </div>
 </section>
