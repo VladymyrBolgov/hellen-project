@@ -1,3 +1,4 @@
+
 const readMoreBtn = document.querySelector(".review__btn");
 const text = document.querySelector(".review__comment");
 
